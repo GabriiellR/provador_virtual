@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="../css/provador.css">
+  <link rel="stylesheet" href="../css/footer.css">
+  <link rel="shortcut icon" href="../images/logo/logo.png" type="image/x-icon">
+  <title>TC - Moda Masculina</title>
+</head>
+
+<body>
+  <section id="header">
+    <div class="header container">
+      <div class="nav-bar">
+        <div class="brand">
+          <a href="#">
+            <h1><span>P</span>rovador <span>V</span>irtual 2D</h1>
+          </a>
+        </div>
+        <div class="nav-list">
+          <div class="hamburger">
+            <div class="bar"></div>
+          </div>
+          <ul>
+            <li><a href="../../index.html" data-after="Home">Home</a></li>
+
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="hero">
+    <div class="hero container">
+      <div>
+        <h1>Olá, <span></span></h1>
+        <h1>Bem vindo ao nosso<span></span></h1>
+        <h1>Provador <span></span></h1>
+        <a type="button" class="open-modal cta" style="color: aliceblue;">Provador</a>
+
+      </div>
+    </div>
+  </section>
+
+  <div class="pre-footer">
+    <div class="containerPrefooter">
+      <h2 class="pre-footer-title">Inscreva-se para receber atualizações</h2>
+      <p class="pre-footer-description">Fique atento a novos produtos e ofertas especiais.</p>
+      <div class="subscribe">
+        <input type="email" class="email-input" placeholder="Seu e-mail">
+        <button class="subscribe-button">Inscreva-se</button>
+      </div>
+    </div>
+  </div>
+
+
+
+  <footer>
+    <div class="footer-column">
+      <img src="../images/logo/logo.png" alt="Imagem" class="footer-image" style="width: 60px;">
+
+      <p class="lorem-ipsum">
+        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris eros. Nulla quis ante sed tortor
+        efficitur facilisis.
+      </p>
+      <div class="social-icons">
+        <a href="#" class="footer-icon">
+          <ion-icon name="logo-instagram"></ion-icon>
+        </a>
+        <a href="#" class="footer-icon">
+          <ion-icon name="logo-facebook"></ion-icon>
+        </a>
+      </div>
+    </div>
+
+    <div class="footer-column">
+      <h2 class="nav-title">Contato</h2>
+
+      <div class="contact-info">
+        <div class="icon-box">
+          <ion-icon name="call-outline"></ion-icon>
+        </div>
+        <span class="content">(00) 0000-0000</span>
+      </div>
+
+      <div class="contact-info">
+        <div class="icon-box">
+          <ion-icon name="mail-outline"></ion-icon>
+        </div>
+        <a class="content">example@example.com</a>
+      </div>
+
+      <div class="contact-info">
+        <div class="icon-box">
+          <ion-icon name="location-outline"></ion-icon>
+        </div>
+        <span class="content">
+          
+        </span>
+      </div>
+
+      <div class="contact-info">
+        <div class="icon-box">
+          <ion-icon name="time-outline"></ion-icon>
+        </div>
+        <span class="content">Segunda a Sexta 08:00–18:00</span>
+      </div>
+    </div>
+  </footer>
+
+
+  <div class="modal-overlay" id="modal">
+    <div class="modal">
+      <div class="modal-header">
+        <h2>Provador</h2>
+        <button class="close-modal" id="close-modal">×</button>
+      </div>
+  
+      <div class="modal-content">
+        <div class="image-details">
+          <img src="../images/provador/base.png" alt="Imagem do Produto" id="imagemBase"> 
+        </div>
+
+        <div class="container-carousel">
+          <img id="produtoImagem" alt="Imagem do Produto" class="experimentar-animation" style="width: 200px;">
+          <div class="details" id="detalhesProduto">
+          </div>
+          <div class="arrow left-arrow" id="setaEsquerda">&#9665;</div>
+          <div class="arrow right-arrow" id="setaDireita">&#9655;</div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <!-- End Footer -->
+  <script src="../js/provador.js"></script>
+</body>
+
+<script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+<script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+</html>

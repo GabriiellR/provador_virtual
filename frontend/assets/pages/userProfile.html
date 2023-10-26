@@ -1,0 +1,344 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TC - Moda Masculina</title>
+    <link rel="stylesheet" href="../css/userProfile.css">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
+    <link rel="stylesheet" href="../css/footer.css">
+    <script src="../js/userProfile.js"></script>
+    <link rel="shortcut icon" href="../images/logo/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="main-content">
+        <nav class="navbar navbar-top navbar-expand-md navbar-dark" id="navbar-main">
+            <div class="container-fluid">
+                <a class="h4 mb-0 text-white text-uppercase d-none d-lg-inline-block" href="../../index.html">Home</a>
+                <form class="navbar-search navbar-search-dark form-inline mr-3 d-none d-md-flex ml-lg-auto">
+                    <div class="form-group mb-0">
+                        <div class="input-group input-group-alternative">
+                            <div class="input-group-prepend">
+                                <span class="input-group-text"><i class="fas fa-search"></i></span>
+                            </div>
+                            <input class="form-control" placeholder="Buscar..." type="text">
+                        </div>
+                    </div>
+                </form>
+                <ul class="navbar-nav align-items-center d-none d-md-flex">
+                    <li class="nav-item dropdown">
+                        <a class="nav-link pr-0" href="#" role="button" data-toggle="dropdown" aria-haspopup="true"
+                            aria-expanded="false">
+                            <div class="media align-items-center">
+                                <span class="avatar avatar-sm rounded-circle">
+                                    <img alt="Image placeholder" src="https://ui-avatars.com/api/?name=Filipe">
+                                </span>
+                                <div class="media-body ml-2 d-none d-lg-block">
+                                    <span class="mb-0 text-sm  font-weight-bold">Filipe</span>
+                                  
+                                </div>
+                            </div>
+                        </a>
+                       
+                    </li>
+                </ul>
+            </div>
+        </nav>
+        <div class="header pb-8 pt-5 pt-lg-8 d-flex align-items-center"
+            style="min-height: 600px; background-image: url(../images/banner3.jpg); background-size: cover; background-position: center top;">
+            <span class="mask bg-gradient-default opacity-8"></span>
+            <div class="container-fluid d-flex align-items-center">
+                <div class="row">
+                    <div class="col-lg-7 col-md-10">
+                        <h1 class="display-2 text-white">Olá Filipe</h1>
+                        <p class="text-white mt-0 mb-5">_______________________________________________________</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid mt--7">
+            <div class="row">
+                <div class="col-xl-4 order-xl-2 mb-5 mb-xl-0">
+                    <div class="card card-profile shadow">
+                        <div class="row justify-content-center">
+                            <div class="col-lg-3 order-lg-2">
+                                <div class="card-profile-image">
+                                    <a href="#">
+                                        <img src="https://ui-avatars.com/api/?name=Filipe" class="rounded-circle">
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-header text-center border-0 pt-8 pt-md-4 pb-0 pb-md-4">
+                            <div class="d-flex justify-content-between">
+                                <div>
+                                    <a href="login.html" class="btn btn-sm btn-default float-right" style="background-color: rgb(133, 51, 51); border-color: brown;">Sair Da Conta</a>
+                                </div>
+                                <img src="../images/logo/logo.png" alt="">
+                            </div>
+                        </div>
+                        <div class="card-body pt-0 pt-md-4">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="card-profile-stats d-flex justify-content-center mt-md-5">
+                                        <div>
+                                            <a href="#" class="btn btn-sm btn-info mr-4">Meus Pedidos</a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-sm btn-info mr-4">Voltar Para a Loja</a>
+                                        </div>
+                                        <div>
+                                            <a href="#" class="btn btn-sm btn-info mr-4">Provador Virtual</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="text-center">
+                                <h3>
+                                    Filipe<span class="font-weight-light">, 24</span>
+                                </h3>
+                                <div class="h5 font-weight-300">
+                                    <i class="ni location_pin mr-2"></i>Belo Horizonte, Minas Gerais
+                                </div>
+                               
+                               
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-xl-8 order-xl-1">
+                    <div class="card bg-secondary shadow">
+                        <div class="card-header bg-white border-0">
+                            <div class="row align-items-center">
+                                <div class="col-8">
+                                    <h3 class="mb-0">Minha Conta</h3>
+                                </div>
+                                <div class="col-4 text-right" id="divEditar">
+                                    <a href="#!" class="btn btn-sm btn-primary" id="habilitar-button">Editar Dados</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="card-body">
+                            <form id="form">
+                                <h6 class="heading-small text-muted mb-4">dados da conta</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-lg-6">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-email">Endereço de Email
+                                                </label>
+                                                <input type="email" id="input-email"
+                                                    class="form-control form-control-alternative"
+                                                    placeholder="example@example.com">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-6">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-username">CPF/CNPJ</label>
+                                                <input type="text" id="input-username"
+                                                    class="form-control form-control-alternative" placeholder="CPF/CNPJ"
+                                                    value="00000000000">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div>
+                                            <a href="#" class="btn btn-sm btn-info mr-4" style="left: 16px;">Alterar
+                                                Senha</a>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <h6 class="heading-small text-muted mb-4">ENDEREÇO DE ENTREGA</h6>
+                                <div class="pl-lg-4">
+                                    <div class="row">
+                                        <div class="col-md-12">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-address">Endereço</label>
+                                                <input id="input-address" class="form-control form-control-alternative"
+                                                    placeholder="Endereço"
+                                                    value="Nome da Rua, número."
+                                                    type="text">
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row">
+                                        <div class="col-lg-4">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-city">Cidade</label>
+                                                <input type="text" id="input-city"
+                                                    class="form-control form-control-alternative" placeholder="Cidade"
+                                                    value="">
+                                            </div>
+                                        </div>
+
+                                        <div class="col-lg-4">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-city">Bairro</label>
+                                                <input type="text" id="input-city"
+                                                    class="form-control form-control-alternative" placeholder="Bairro"
+                                                    value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-country">País</label>
+                                                <input type="text" id="input-country"
+                                                    class="form-control form-control-alternative" placeholder="País"
+                                                    value="">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group">
+                                                <label class="form-control-label" for="input-country">CEP
+                                                    </label>
+                                                <input type="number" id="input-postal-code"
+                                                    class="form-control form-control-alternative"
+                                                    placeholder="00000-000">
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-4">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-city">Adicionais</label>
+                                                <input type="text" id="input-city"
+                                                    class="form-control form-control-alternative" placeholder="Blobo 5, Ap 230"
+                                                    value="">
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <hr class="my-4">
+                                <h6 class="heading-small text-muted mb-4">Informações Pessoais</h6>
+                                <div class="row">
+                                    <div class="col-md-12">
+                                        <div class="form-group focused">
+                                            <label class="form-control-label" for="input-address">Nome Completo</label>
+                                            <input id="input-address" class="form-control form-control-alternative"
+                                                placeholder="Nome Completo"
+                                                value=""
+                                                type="text">
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="row">
+                                    <div class="col-lg-4">
+                                        <div class="form-group focused">
+                                            <label class="form-control-label" for="input-city">Telefone</label>
+                                            <input type="text" id="input-city"
+                                                class="form-control form-control-alternative" placeholder="(00) 00000-0000"
+                                                value="">
+                                        </div>
+                                    </div>
+
+                                    <div class="col-lg-4">
+                                        <div class="form-group focused">
+                                            <label class="form-control-label" for="input-sexo">Sexo</label>
+                                            <select id="input-sexo" class="form-control form-control-alternative">
+                                                <option value="" disabled selected>Selecione...</option>
+                                                <option value="masculino">Masculino</option>
+                                                <option value="feminino">Feminino</option>
+                                                <option value="não-binário">Não-binário</option>
+                                                <option value="gênero fluído">Gênero Fluído</option>
+                                                <option value="agênero">Agênero</option>
+                                                <option value="outro">Outro</option>
+                                            </select>
+                                        </div>
+                                        
+                                        
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group focused">
+                                            <label class="form-control-label" for="input-country">Data de Nascimento</label>
+                                            <input type="text" id="input-country"
+                                                class="form-control form-control-alternative" placeholder="00-00-0000"
+                                                value="">
+                                        </div>
+                                    </div>
+                                    <div class="col-lg-4">
+                                        <div class="form-group">
+                                            <label class="form-control-label" for="input-country">Novidades
+                                                </label>
+                                            <input type="text" id="input-postal-code"
+                                                class="form-control form-control-alternative"
+                                                placeholder="">
+                                        </div>
+                                    </div>
+                                
+                                </div>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="pre-footer">
+        <div class="containerPrefooter">
+            <h2 class="pre-footer-title">Inscreva-se para receber atualizações</h2>
+            <p class="pre-footer-description">Fique atento a novos produtos e ofertas especiais.</p>
+            <div class="subscribe">
+                <input type="email" class="email-input" placeholder="Seu e-mail">
+                <button class="subscribe-button">Inscreva-se</button>
+            </div>
+        </div>
+    </div>
+
+    <footer>
+        <div class="footer-column">
+            <img src="../images/logo/logo.png" alt="Imagem" class="footer-image">
+            <p class="lorem-ipsum">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ut mauris eros. Nulla quis ante sed tortor
+                efficitur facilisis.
+            </p>
+            <div class="social-icons">
+                <a href="#" class="footer-icon">
+                    <ion-icon name="logo-instagram"></ion-icon>
+                </a>
+                <a href="#" class="footer-icon">
+                    <ion-icon name="logo-facebook"></ion-icon>
+                </a>
+            </div>
+        </div>
+
+        <div class="footer-column">
+            <h2 class="nav-title">Contato</h2>
+
+            <div class="contact-info">
+                <div class="icon-box">
+                    <ion-icon name="call-outline"></ion-icon>
+                </div>
+                <span class="content">(00) 0000-0000</span>
+            </div>
+
+            <div class="contact-info">
+                <div class="icon-box">
+                    <ion-icon name="mail-outline"></ion-icon>
+                </div>
+                <a class="content">example@example.com</a>
+            </div>
+
+            <div class="contact-info">
+                <div class="icon-box">
+                    <ion-icon name="location-outline"></ion-icon>
+                </div>
+                <span class="content">
+                    R. Dom José Gaspar, 500 - Coração Eucarístico, Belo Horizonte - MG, 30535-901
+                </span>
+            </div>
+
+            <div class="contact-info">
+                <div class="icon-box">
+                    <ion-icon name="time-outline"></ion-icon>
+                </div>
+                <span class="content">Segunda a Sexta 08:00–18:00</span>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
