@@ -1,0 +1,12 @@
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\bin\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.deps.json
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\bin\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\bin\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\obj\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj.AssemblyReference.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\obj\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\obj\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.AssemblyInfoInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\obj\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.AssemblyInfo.cs
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\obj\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\obj\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\obj\Debug\net7.0\refint\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\obj\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\obj\Debug\net7.0\ref\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.dll

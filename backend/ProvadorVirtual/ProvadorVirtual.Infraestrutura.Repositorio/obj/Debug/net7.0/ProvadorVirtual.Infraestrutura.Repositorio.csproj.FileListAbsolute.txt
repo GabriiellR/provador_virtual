@@ -1,0 +1,12 @@
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\bin\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.deps.json
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\bin\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\bin\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.csproj.AssemblyReference.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.AssemblyInfoInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.AssemblyInfo.cs
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\refint\ProvadorVirtual.Infraestrutura.Repositorio.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ref\ProvadorVirtual.Infraestrutura.Repositorio.dll
