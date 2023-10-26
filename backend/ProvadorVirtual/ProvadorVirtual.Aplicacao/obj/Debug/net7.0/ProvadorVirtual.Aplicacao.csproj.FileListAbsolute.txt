@@ -1,0 +1,12 @@
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\bin\Debug\net7.0\ProvadorVirtual.Aplicacao.deps.json
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\bin\Debug\net7.0\ProvadorVirtual.Aplicacao.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\bin\Debug\net7.0\ProvadorVirtual.Aplicacao.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\obj\Debug\net7.0\ProvadorVirtual.Aplicacao.csproj.AssemblyReference.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\obj\Debug\net7.0\ProvadorVirtual.Aplicacao.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\obj\Debug\net7.0\ProvadorVirtual.Aplicacao.AssemblyInfoInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\obj\Debug\net7.0\ProvadorVirtual.Aplicacao.AssemblyInfo.cs
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\obj\Debug\net7.0\ProvadorVirtual.Aplicacao.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\obj\Debug\net7.0\ProvadorVirtual.Aplicacao.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\obj\Debug\net7.0\refint\ProvadorVirtual.Aplicacao.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\obj\Debug\net7.0\ProvadorVirtual.Aplicacao.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Aplicacao\obj\Debug\net7.0\ref\ProvadorVirtual.Aplicacao.dll

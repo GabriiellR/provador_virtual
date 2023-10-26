@@ -1,0 +1,23 @@
+{
+  "runtimeTarget": {
+    "name": ".NETCoreApp,Version=v7.0",
+    "signature": ""
+  },
+  "compilationOptions": {},
+  "targets": {
+    ".NETCoreApp,Version=v7.0": {
+      "ProvadorVirtual.Aplicacao/1.0.0": {
+        "runtime": {
+          "ProvadorVirtual.Aplicacao.dll": {}
+        }
+      }
+    }
+  },
+  "libraries": {
+    "ProvadorVirtual.Aplicacao/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    }
+  }
+}
