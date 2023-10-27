@@ -1,4 +1,10 @@
 ﻿using Microsoft.Extensions.DependencyInjection;
+using ProvadorVirtual.Aplicacao.Interfaces.Administracao;
+using ProvadorVirtual.Aplicacao.Services;
+using ProvadorVirtual.Infraestrutura.Repositorio.Administracao;
+using ProvadorVirtual.Nucleo.Interfaces.Repositorio.Administracao;
+using ProvadorVirtual.Nucleo.Interfaces.Services.Administracao;
+using ProvadorVirtual.Servicos.Services.Administracao;
 
 namespace ProvadorVirtual.Infrastrutura.Crosscutting.Ioc
 {
@@ -18,7 +24,15 @@ namespace ProvadorVirtual.Infrastrutura.Crosscutting.Ioc
 
         private static void RegisterScoped(IServiceCollection service)
         {
+            service.AddScoped<IApplicationServiceUsuario, ApplicationServiceUsuario>();
+            service.AddScoped<IApplicationServiceTokenService, ApplicationServiceTokenService>();
+
+
+            service.AddScoped<IServiceUsuario, ServiceUsuario>();
             
+
+
+            service.AddScoped<IRepositoryUsuario, RepositoryUsuario>();
         }
 
     }

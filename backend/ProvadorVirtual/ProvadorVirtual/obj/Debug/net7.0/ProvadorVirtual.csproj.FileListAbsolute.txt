@@ -11,6 +11,8 @@ C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorV
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.runtimeconfig.json
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\AutoMapper.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\AutoMapper.Extensions.Microsoft.DependencyInjection.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\Azure.Core.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\Azure.Identity.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\Humanizer.dll
@@ -60,12 +62,20 @@ C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorV
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Runtime.Caching.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Security.Cryptography.ProtectedData.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\runtimes\win\lib\net6.0\System.Windows.Extensions.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Aplicacao.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Dominio.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.DTO.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Infraestrutura.Data.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Nucleo.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Aplicacao.pdb
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Infraestrutura.Data.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.pdb
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.pdb
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Dominio.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.DTO.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Nucleo.pdb
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\obj\Debug\net7.0\ProvadorVirtual.MvcApplicationPartsAssemblyInfo.cs
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\obj\Debug\net7.0\staticwebassets\msbuild.ProvadorVirtual.Microsoft.AspNetCore.StaticWebAssets.props
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\obj\Debug\net7.0\staticwebassets\msbuild.build.ProvadorVirtual.props
@@ -81,3 +91,7 @@ C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorV
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\obj\Debug\net7.0\ProvadorVirtual.pdb
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\obj\Debug\net7.0\ProvadorVirtual.genruntimeconfig.cache
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\obj\Debug\net7.0\ref\ProvadorVirtual.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Servicos.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Infraestrutura.Repositorio.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\ProvadorVirtual.Servicos.pdb

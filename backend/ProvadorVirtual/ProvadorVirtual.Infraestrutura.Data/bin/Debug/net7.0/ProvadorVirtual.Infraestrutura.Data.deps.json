@@ -630,6 +630,11 @@
         }
       },
       "ProvadorVirtual.Dominio/1.0.0": {
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0"
+        },
         "runtime": {
           "ProvadorVirtual.Dominio.dll": {}
         }

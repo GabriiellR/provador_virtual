@@ -37,6 +37,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Servicos", 
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvadorVirtual.Aplicacao", "ProvadorVirtual.Aplicacao\ProvadorVirtual.Aplicacao.csproj", "{B3FDE4FA-3020-4720-A065-5EA747064007}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvadorVirtual.DTO", "ProvadorVirtual.DTO\ProvadorVirtual.DTO.csproj", "{5C0EB6CB-5B7B-4A11-9F90-3824C44FAE84}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -79,6 +81,10 @@ Global
 		{B3FDE4FA-3020-4720-A065-5EA747064007}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{B3FDE4FA-3020-4720-A065-5EA747064007}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{B3FDE4FA-3020-4720-A065-5EA747064007}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5C0EB6CB-5B7B-4A11-9F90-3824C44FAE84}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5C0EB6CB-5B7B-4A11-9F90-3824C44FAE84}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5C0EB6CB-5B7B-4A11-9F90-3824C44FAE84}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5C0EB6CB-5B7B-4A11-9F90-3824C44FAE84}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
@@ -95,6 +101,7 @@ Global
 		{BD30F030-F21F-42E2-B757-3088BB2AE63F} = {0CD17D79-8827-4864-9DC8-E8A745A47F5F}
 		{EAE37CD4-3015-44C2-9F8C-D18260F41180} = {0CD17D79-8827-4864-9DC8-E8A745A47F5F}
 		{B3FDE4FA-3020-4720-A065-5EA747064007} = {DDEB5BEE-427D-43BE-A570-331EC0BB1CA5}
+		{5C0EB6CB-5B7B-4A11-9F90-3824C44FAE84} = {DDEB5BEE-427D-43BE-A570-331EC0BB1CA5}
 	EndGlobalSection
 	GlobalSection(ExtensibilityGlobals) = postSolution
 		SolutionGuid = {7E4C75AA-8D07-481C-969E-4CBE7076A675}

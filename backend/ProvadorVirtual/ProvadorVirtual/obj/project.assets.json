@@ -2,6 +2,35 @@
   "version": 3,
   "targets": {
     "net7.0": {
+      "AutoMapper/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "Microsoft.CSharp": "4.7.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.dll": {
+            "related": ".xml"
+          }
+        }
+      },
+      "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
+        "type": "package",
+        "dependencies": {
+          "AutoMapper": "[12.0.1]",
+          "Microsoft.Extensions.Options": "6.0.0"
+        },
+        "compile": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        },
+        "runtime": {
+          "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll": {}
+        }
+      },
       "Azure.Core/1.25.0": {
         "type": "package",
         "dependencies": {
@@ -233,7 +262,7 @@
           }
         }
       },
-      "Microsoft.CSharp/4.5.0": {
+      "Microsoft.CSharp/4.7.0": {
         "type": "package",
         "compile": {
           "ref/netcoreapp2.0/_._": {}
@@ -1465,14 +1494,55 @@
           }
         }
       },
+      "ProvadorVirtual.Aplicacao/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "ProvadorVirtual.DTO": "1.0.0",
+          "ProvadorVirtual.Dominio": "1.0.0",
+          "ProvadorVirtual.Nucleo": "1.0.0",
+          "System.IdentityModel.Tokens.Jwt": "6.24.0"
+        },
+        "compile": {
+          "bin/placeholder/ProvadorVirtual.Aplicacao.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProvadorVirtual.Aplicacao.dll": {}
+        }
+      },
       "ProvadorVirtual.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0"
+        },
         "compile": {
           "bin/placeholder/ProvadorVirtual.Dominio.dll": {}
         },
         "runtime": {
           "bin/placeholder/ProvadorVirtual.Dominio.dll": {}
+        }
+      },
+      "ProvadorVirtual.DTO/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProvadorVirtual.DTO.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProvadorVirtual.DTO.dll": {}
         }
       },
       "ProvadorVirtual.Infraestrutura.Data/1.0.0": {
@@ -1493,13 +1563,54 @@
           "bin/placeholder/ProvadorVirtual.Infraestrutura.Data.dll": {}
         }
       },
+      "ProvadorVirtual.Infraestrutura.Repositorio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "ProvadorVirtual.Infraestrutura.Data": "1.0.0",
+          "ProvadorVirtual.Nucleo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProvadorVirtual.Infraestrutura.Repositorio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProvadorVirtual.Infraestrutura.Repositorio.dll": {}
+        }
+      },
+      "ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "AutoMapper": "12.0.1",
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": "12.0.1",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "ProvadorVirtual.DTO": "1.0.0",
+          "ProvadorVirtual.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.dll": {}
+        }
+      },
       "ProvadorVirtual.Infrastrutura.CrossCutting.Ioc/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
           "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
+          "Microsoft.Extensions.Configuration": "7.0.0",
           "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
-          "Microsoft.Extensions.Configuration.Json": "7.0.0"
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "ProvadorVirtual.Aplicacao": "1.0.0",
+          "ProvadorVirtual.Servicos": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.dll": {}
@@ -1507,10 +1618,72 @@
         "runtime": {
           "bin/placeholder/ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.dll": {}
         }
+      },
+      "ProvadorVirtual.Nucleo/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "ProvadorVirtual.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProvadorVirtual.Nucleo.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProvadorVirtual.Nucleo.dll": {}
+        }
+      },
+      "ProvadorVirtual.Servicos/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "ProvadorVirtual.Infraestrutura.Repositorio": "1.0.0",
+          "ProvadorVirtual.Nucleo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProvadorVirtual.Servicos.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProvadorVirtual.Servicos.dll": {}
+        }
       }
     }
   },
   "libraries": {
+    "AutoMapper/12.0.1": {
+      "sha512": "hvV62vl6Hp/WfQ24yzo3Co9+OPl8wH8hApwVtgWpiAynVJkUcs7xvehnSftawL8Pe8FrPffBRM3hwzLQqWDNjA==",
+      "type": "package",
+      "path": "automapper/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.12.0.1.nupkg.sha512",
+        "automapper.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.dll",
+        "lib/netstandard2.1/AutoMapper.xml"
+      ]
+    },
+    "AutoMapper.Extensions.Microsoft.DependencyInjection/12.0.1": {
+      "sha512": "+g/K+Vpe3gGMKGzjslMOdqNlkikScDjWfVvmWTayrDHaG/n2pPmFBMa+jKX1r/h6BDGFdkyRjAuhFE3ykW+r1g==",
+      "type": "package",
+      "path": "automapper.extensions.microsoft.dependencyinjection/12.0.1",
+      "files": [
+        ".nupkg.metadata",
+        ".signature.p7s",
+        "README.md",
+        "automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
+        "automapper.extensions.microsoft.dependencyinjection.nuspec",
+        "icon.png",
+        "lib/netstandard2.1/AutoMapper.Extensions.Microsoft.DependencyInjection.dll"
+      ]
+    },
     "Azure.Core/1.25.0": {
       "sha512": "X8Dd4sAggS84KScWIjEbFAdt2U1KDolQopTPoHVubG2y3CM54f9l6asVrP5Uy384NWXjsspPYaJgz5xHc+KvTA==",
       "type": "package",
@@ -1713,10 +1886,10 @@
         "version.txt"
       ]
     },
-    "Microsoft.CSharp/4.5.0": {
-      "sha512": "kaj6Wb4qoMuH3HySFJhxwQfe8R/sJsNJnANrvv8WdFPMoNbKY5htfNscv+LHCu5ipz+49m2e+WQXpLXr9XYemQ==",
+    "Microsoft.CSharp/4.7.0": {
+      "sha512": "pTj+D3uJWyN3My70i2Hqo+OXixq3Os2D1nJ2x92FFo6sk8fYS1m1WLNTs0Dc1uPaViH0YvEEwvzddQ7y4rhXmA==",
       "type": "package",
-      "path": "microsoft.csharp/4.5.0",
+      "path": "microsoft.csharp/4.7.0",
       "files": [
         ".nupkg.metadata",
         ".signature.p7s",
@@ -1729,6 +1902,7 @@
         "lib/netcoreapp2.0/_._",
         "lib/netstandard1.3/Microsoft.CSharp.dll",
         "lib/netstandard2.0/Microsoft.CSharp.dll",
+        "lib/netstandard2.0/Microsoft.CSharp.xml",
         "lib/portable-net45+win8+wp8+wpa81/_._",
         "lib/uap10.0.16299/_._",
         "lib/win8/_._",
@@ -1738,7 +1912,7 @@
         "lib/xamarinmac20/_._",
         "lib/xamarintvos10/_._",
         "lib/xamarinwatchos10/_._",
-        "microsoft.csharp.4.5.0.nupkg.sha512",
+        "microsoft.csharp.4.7.0.nupkg.sha512",
         "microsoft.csharp.nuspec",
         "ref/MonoAndroid10/_._",
         "ref/MonoTouch10/_._",
@@ -3996,24 +4170,56 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ProvadorVirtual.Aplicacao/1.0.0": {
+      "type": "project",
+      "path": "../ProvadorVirtual.Aplicacao/ProvadorVirtual.Aplicacao.csproj",
+      "msbuildProject": "../ProvadorVirtual.Aplicacao/ProvadorVirtual.Aplicacao.csproj"
+    },
     "ProvadorVirtual.Dominio/1.0.0": {
       "type": "project",
       "path": "../ProvadorVirtual.Dominio/ProvadorVirtual.Dominio.csproj",
       "msbuildProject": "../ProvadorVirtual.Dominio/ProvadorVirtual.Dominio.csproj"
+    },
+    "ProvadorVirtual.DTO/1.0.0": {
+      "type": "project",
+      "path": "../ProvadorVirtual.DTO/ProvadorVirtual.DTO.csproj",
+      "msbuildProject": "../ProvadorVirtual.DTO/ProvadorVirtual.DTO.csproj"
     },
     "ProvadorVirtual.Infraestrutura.Data/1.0.0": {
       "type": "project",
       "path": "../ProvadorVirtual.Infraestrutura.Data/ProvadorVirtual.Infraestrutura.Data.csproj",
       "msbuildProject": "../ProvadorVirtual.Infraestrutura.Data/ProvadorVirtual.Infraestrutura.Data.csproj"
     },
+    "ProvadorVirtual.Infraestrutura.Repositorio/1.0.0": {
+      "type": "project",
+      "path": "../ProvadorVirtual.Infraestrutura.Repositorio/ProvadorVirtual.Infraestrutura.Repositorio.csproj",
+      "msbuildProject": "../ProvadorVirtual.Infraestrutura.Repositorio/ProvadorVirtual.Infraestrutura.Repositorio.csproj"
+    },
+    "ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores/1.0.0": {
+      "type": "project",
+      "path": "../ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores/ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.csproj",
+      "msbuildProject": "../ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores/ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.csproj"
+    },
     "ProvadorVirtual.Infrastrutura.CrossCutting.Ioc/1.0.0": {
       "type": "project",
       "path": "../ProvadorVirtual.Infrastrutura.CrossCutting.Ioc/ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj",
       "msbuildProject": "../ProvadorVirtual.Infrastrutura.CrossCutting.Ioc/ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj"
+    },
+    "ProvadorVirtual.Nucleo/1.0.0": {
+      "type": "project",
+      "path": "../ProvadorVirtual.Nucleo/ProvadorVirtual.Nucleo.csproj",
+      "msbuildProject": "../ProvadorVirtual.Nucleo/ProvadorVirtual.Nucleo.csproj"
+    },
+    "ProvadorVirtual.Servicos/1.0.0": {
+      "type": "project",
+      "path": "../ProvadorVirtual.Servicos/ProvadorVirtual.Servicos.csproj",
+      "msbuildProject": "../ProvadorVirtual.Servicos/ProvadorVirtual.Servicos.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net7.0": [
+      "AutoMapper >= 12.0.1",
+      "AutoMapper.Extensions.Microsoft.DependencyInjection >= 12.0.1",
       "Microsoft.AspNetCore.Authentication.Core >= 2.2.0",
       "Microsoft.AspNetCore.Authentication.JwtBearer >= 7.0.13",
       "Microsoft.AspNetCore.OpenApi >= 7.0.4",
@@ -4021,10 +4227,13 @@
       "Microsoft.EntityFrameworkCore.Design >= 7.0.13",
       "Microsoft.EntityFrameworkCore.SqlServer >= 7.0.13",
       "Microsoft.EntityFrameworkCore.Tools >= 7.0.13",
+      "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.Configuration.FileExtensions >= 7.0.0",
       "Microsoft.Extensions.Configuration.Json >= 7.0.0",
+      "ProvadorVirtual.Aplicacao >= 1.0.0",
       "ProvadorVirtual.Infraestrutura.Data >= 1.0.0",
       "ProvadorVirtual.Infrastrutura.CrossCutting.Ioc >= 1.0.0",
+      "ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores >= 1.0.0",
       "Swashbuckle.AspNetCore >= 6.4.0"
     ]
   },
@@ -4055,8 +4264,14 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
+            "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Aplicacao\\ProvadorVirtual.Aplicacao.csproj": {
+              "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Aplicacao\\ProvadorVirtual.Aplicacao.csproj"
+            },
             "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj": {
               "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj"
+            },
+            "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.csproj": {
+              "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.csproj"
             },
             "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj": {
               "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj"
@@ -4074,6 +4289,14 @@
       "net7.0": {
         "targetAlias": "net7.0",
         "dependencies": {
+          "AutoMapper": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          },
+          "AutoMapper.Extensions.Microsoft.DependencyInjection": {
+            "target": "Package",
+            "version": "[12.0.1, )"
+          },
           "Microsoft.AspNetCore.Authentication.Core": {
             "target": "Package",
             "version": "[2.2.0, )"
@@ -4105,6 +4328,10 @@
             "suppressParent": "All",
             "target": "Package",
             "version": "[7.0.13, )"
+          },
+          "Microsoft.Extensions.Configuration": {
+            "target": "Package",
+            "version": "[7.0.0, )"
           },
           "Microsoft.Extensions.Configuration.FileExtensions": {
             "target": "Package",

@@ -7,6 +7,8 @@
   </PropertyGroup>
 
   <ItemGroup>
+    <PackageReference Include="AutoMapper" Version="12.0.1" />
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="12.0.1" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.Core" Version="2.2.0" />
     <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="7.0.13" />
     <PackageReference Include="Microsoft.AspNetCore.OpenApi" Version="7.0.4" />
@@ -20,17 +22,16 @@
       <PrivateAssets>all</PrivateAssets>
       <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
     </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Configuration" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.FileExtensions" Version="7.0.0" />
     <PackageReference Include="Microsoft.Extensions.Configuration.Json" Version="7.0.0" />
     <PackageReference Include="Swashbuckle.AspNetCore" Version="6.4.0" />
   </ItemGroup>
 
   <ItemGroup>
-    <Folder Include="Controllers\" />
-  </ItemGroup>
-
-  <ItemGroup>
+    <ProjectReference Include="..\ProvadorVirtual.Aplicacao\ProvadorVirtual.Aplicacao.csproj" />
     <ProjectReference Include="..\ProvadorVirtual.Infraestrutura.Data\ProvadorVirtual.Infraestrutura.Data.csproj" />
+    <ProjectReference Include="..\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.csproj" />
     <ProjectReference Include="..\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj" />
   </ItemGroup>
 

@@ -1,11 +1,11 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
+using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using Microsoft.OpenApi.Models;
+using ProvadorVirtual.Infraestrutura.Data;
+using ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.Profiles;
+using ProvadorVirtual.Infrastrutura.Crosscutting.Ioc;
 using System.Text;
 using System.Text.Json.Serialization;
-using ProvadorVirtual.Infrastrutura.Crosscutting.Ioc;
-using ProvadorVirtual.Infraestrutura.Data;
-using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -16,6 +16,7 @@ builder.Services.AddControllers();
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
 
+builder.Services.AddAutoMapper(config => config.AddMaps(typeof(UsuarioProfile).Assembly));
 
 var connectionString = builder.Configuration.GetConnectionString("sqlServer");
 builder.Services.AddDbContext<Context>(prop => prop.UseSqlServer(connectionString,
@@ -42,7 +43,7 @@ builder.Services.AddAuthentication(options =>
               });
 
 builder.Services.AddControllers().AddJsonOptions(x =>
-   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.Preserve);
+   x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 builder.Services.AddSwaggerGen();
 

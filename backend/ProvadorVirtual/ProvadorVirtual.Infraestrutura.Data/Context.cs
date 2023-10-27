@@ -1,22 +1,18 @@
 ﻿using Microsoft.EntityFrameworkCore;
 using Microsoft.Extensions.Configuration;
+using ProvadorVirtual.Dominio.Models;
 
 namespace ProvadorVirtual.Infraestrutura.Data
 {
     public class Context : DbContext
     {
-        public Context(DbContextOptions<Context> options) : base(options)
-        {
+        public Context(DbContextOptions<Context> options) : base(options) { }
 
-        }
-
-        public Context()
-        {
-
-        }
+        public Context() { }
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            base.OnModelCreating(modelBuilder);
             modelBuilder.ApplyConfigurationsFromAssembly(GetType().Assembly);
         }
 
@@ -35,7 +31,7 @@ namespace ProvadorVirtual.Infraestrutura.Data
             optionsBuilder.UseSqlServer(connectionString);
         }
 
-
+        public DbSet<Usuario> Usuario { get; set; }
 
 
     }

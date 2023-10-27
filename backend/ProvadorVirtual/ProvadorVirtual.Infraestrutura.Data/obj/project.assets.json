@@ -1089,6 +1089,11 @@
       "ProvadorVirtual.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0"
+        },
         "compile": {
           "bin/placeholder/ProvadorVirtual.Dominio.dll": {}
         },

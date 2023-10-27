@@ -1,13 +1,15 @@
 {
   "version": 2,
-  "dgSpecHash": "9Swx9rsEyv7TPkCq36Hwn5OdbHzfNfqNs/7H2G2RpfIZVcSpW3IKgeWMUci2ylIvmmJSkPNaQGRucDsoVmm2oA==",
+  "dgSpecHash": "obzqrOQY3oky19E4iLJVP5VRYy//sMv3lGrV6hUpXdW7ZwQxkKTZN7UEFlrUa3zfzgAzASd37rKSGR+KLFz80w==",
   "success": true,
   "projectFilePath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj",
   "expectedPackageFiles": [
+    "C:\\Users\\Gabriel Dias\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
+    "C:\\Users\\Gabriel Dias\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\microsoft.bcl.asyncinterfaces\\1.1.1\\microsoft.bcl.asyncinterfaces.1.1.1.nupkg.sha512",
-    "C:\\Users\\Gabriel Dias\\.nuget\\packages\\microsoft.csharp\\4.5.0\\microsoft.csharp.4.5.0.nupkg.sha512",
+    "C:\\Users\\Gabriel Dias\\.nuget\\packages\\microsoft.csharp\\4.7.0\\microsoft.csharp.4.7.0.nupkg.sha512",
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\microsoft.data.sqlclient\\5.1.1\\microsoft.data.sqlclient.5.1.1.nupkg.sha512",
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\microsoft.data.sqlclient.sni.runtime\\5.1.0\\microsoft.data.sqlclient.sni.runtime.5.1.0.nupkg.sha512",
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.13\\microsoft.entityframeworkcore.7.0.13.nupkg.sha512",
