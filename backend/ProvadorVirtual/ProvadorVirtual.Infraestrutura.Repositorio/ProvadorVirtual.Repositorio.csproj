@@ -14,7 +14,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProvadorVirtual.Infraestrutura.Data\ProvadorVirtual.Infraestrutura.Data.csproj" />
+    <ProjectReference Include="..\ProvadorVirtual.Infraestrutura.Data\ProvadorVirtual.Data.csproj" />
     <ProjectReference Include="..\ProvadorVirtual.Nucleo\ProvadorVirtual.Nucleo.csproj" />
   </ItemGroup>
 
