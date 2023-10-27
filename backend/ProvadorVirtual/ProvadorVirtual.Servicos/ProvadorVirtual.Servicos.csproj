@@ -13,7 +13,7 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\ProvadorVirtual.Infraestrutura.Repositorio\ProvadorVirtual.Infraestrutura.Repositorio.csproj" />
+    <ProjectReference Include="..\ProvadorVirtual.Infraestrutura.Repositorio\ProvadorVirtual.Repositorio.csproj" />
     <ProjectReference Include="..\ProvadorVirtual.Nucleo\ProvadorVirtual.Nucleo.csproj" />
   </ItemGroup>
 

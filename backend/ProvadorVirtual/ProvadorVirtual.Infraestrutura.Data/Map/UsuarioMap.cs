@@ -2,7 +2,7 @@
 using Microsoft.EntityFrameworkCore.Metadata.Builders;
 using ProvadorVirtual.Dominio.Models;
 
-namespace ProvadorVirtual.Infraestrutura.Data.Map
+namespace ProvadorVirtual.Data.Map
 {
     public class UsuarioMap : IEntityTypeConfiguration<Usuario>
     {

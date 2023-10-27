@@ -1,8 +1,8 @@
-﻿using ProvadorVirtual.Dominio;
-using ProvadorVirtual.Infraestrutura.Data;
+﻿using ProvadorVirtual.Data;
+using ProvadorVirtual.Dominio;
 using ProvadorVirtual.Nucleo.Interfaces.Repositorio;
 
-namespace ProvadorVirtual.Infraestrutura.Repositorio
+namespace ProvadorVirtual.Repositorio
 {
     public abstract class RepositoryBase<TEntity> : IRepositoryBase<TEntity>, IDisposable where TEntity : BaseModel
     {

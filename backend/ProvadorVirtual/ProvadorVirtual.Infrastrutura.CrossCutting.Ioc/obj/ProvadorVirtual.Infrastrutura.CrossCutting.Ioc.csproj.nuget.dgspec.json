@@ -233,12 +233,12 @@
         }
       }
     },
-    "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj": {
+    "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj",
-        "projectName": "ProvadorVirtual.Infraestrutura.Data",
-        "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Data.csproj",
+        "projectName": "ProvadorVirtual.Data",
+        "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Data.csproj",
         "packagesPath": "C:\\Users\\Gabriel Dias\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\obj\\",
         "projectStyle": "PackageReference",
@@ -314,12 +314,12 @@
         }
       }
     },
-    "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Infraestrutura.Repositorio.csproj": {
+    "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Repositorio.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Infraestrutura.Repositorio.csproj",
-        "projectName": "ProvadorVirtual.Infraestrutura.Repositorio",
-        "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Infraestrutura.Repositorio.csproj",
+        "projectUniqueName": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Repositorio.csproj",
+        "projectName": "ProvadorVirtual.Repositorio",
+        "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Repositorio.csproj",
         "packagesPath": "C:\\Users\\Gabriel Dias\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\obj\\",
         "projectStyle": "PackageReference",
@@ -338,8 +338,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj": {
-                "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj"
+              "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Data.csproj": {
+                "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Data.csproj"
               },
               "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Nucleo\\ProvadorVirtual.Nucleo.csproj": {
                 "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Nucleo\\ProvadorVirtual.Nucleo.csproj"
@@ -571,8 +571,8 @@
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
-              "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Infraestrutura.Repositorio.csproj": {
-                "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Infraestrutura.Repositorio.csproj"
+              "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Repositorio.csproj": {
+                "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Repositorio.csproj"
               },
               "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Nucleo\\ProvadorVirtual.Nucleo.csproj": {
                 "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Nucleo\\ProvadorVirtual.Nucleo.csproj"

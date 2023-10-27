@@ -2,7 +2,7 @@
 using Microsoft.Extensions.Configuration;
 using ProvadorVirtual.Dominio.Models;
 
-namespace ProvadorVirtual.Infraestrutura.Data
+namespace ProvadorVirtual.Data
 {
     public class Context : DbContext
     {

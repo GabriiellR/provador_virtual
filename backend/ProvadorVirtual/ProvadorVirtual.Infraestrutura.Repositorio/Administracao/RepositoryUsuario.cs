@@ -1,8 +1,9 @@
-﻿using ProvadorVirtual.Dominio.Models;
-using ProvadorVirtual.Infraestrutura.Data;
+﻿using ProvadorVirtual.Data;
+using ProvadorVirtual.Dominio.Models;
 using ProvadorVirtual.Nucleo.Interfaces.Repositorio.Administracao;
+using ProvadorVirtual.Repositorio;
 
-namespace ProvadorVirtual.Infraestrutura.Repositorio.Administracao
+namespace ProvadorVirtual.Repositorio.Administracao
 {
     public class RepositoryUsuario : RepositoryBase<Usuario>, IRepositoryUsuario
     {

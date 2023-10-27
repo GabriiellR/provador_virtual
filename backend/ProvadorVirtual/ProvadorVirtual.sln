@@ -21,13 +21,13 @@ Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.1 - Data", "4.1 - Data", 
 EndProject
 Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "4.2 - CrossCutting", "4.2 - CrossCutting", "{2BE1D256-CFCB-4760-ABC1-C210F913A57D}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Infraestrutura.Repositorio", "ProvadorVirtual.Infraestrutura.Repositorio\ProvadorVirtual.Infraestrutura.Repositorio.csproj", "{BAA77815-C085-461B-A519-BF7FCDFF67D7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Repositorio", "ProvadorVirtual.Infraestrutura.Repositorio\ProvadorVirtual.Repositorio.csproj", "{BAA77815-C085-461B-A519-BF7FCDFF67D7}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Infraestrutura.Data", "ProvadorVirtual.Infraestrutura.Data\ProvadorVirtual.Infraestrutura.Data.csproj", "{09CA7473-5884-423F-AFED-7F219CA9EBE4}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Data", "ProvadorVirtual.Infraestrutura.Data\ProvadorVirtual.Data.csproj", "{09CA7473-5884-423F-AFED-7F219CA9EBE4}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Infrastrutura.CrossCutting.Ioc", "ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj", "{09C0A03E-C5BA-4651-A663-C2D3F52DB33B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Ioc", "ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\ProvadorVirtual.Ioc.csproj", "{09C0A03E-C5BA-4651-A663-C2D3F52DB33B}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores", "ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.csproj", "{5B1218F0-D428-45AA-B091-02279A91C4BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Adaptadores", "ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\ProvadorVirtual.Adaptadores.csproj", "{5B1218F0-D428-45AA-B091-02279A91C4BC}"
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Dominio", "ProvadorVirtual.Dominio\ProvadorVirtual.Dominio.csproj", "{34E910E5-DCC6-43A2-9C3C-1347F07AFF64}"
 EndProject
@@ -35,9 +35,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Nucleo", "P
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Servicos", "ProvadorVirtual.Servicos\ProvadorVirtual.Servicos.csproj", "{EAE37CD4-3015-44C2-9F8C-D18260F41180}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvadorVirtual.Aplicacao", "ProvadorVirtual.Aplicacao\ProvadorVirtual.Aplicacao.csproj", "{B3FDE4FA-3020-4720-A065-5EA747064007}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Aplicacao", "ProvadorVirtual.Aplicacao\ProvadorVirtual.Aplicacao.csproj", "{B3FDE4FA-3020-4720-A065-5EA747064007}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvadorVirtual.DTO", "ProvadorVirtual.DTO\ProvadorVirtual.DTO.csproj", "{5C0EB6CB-5B7B-4A11-9F90-3824C44FAE84}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.DTO", "ProvadorVirtual.DTO\ProvadorVirtual.DTO.csproj", "{5C0EB6CB-5B7B-4A11-9F90-3824C44FAE84}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

@@ -1086,6 +1086,24 @@
           }
         }
       },
+      "ProvadorVirtual.Data/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore": "7.0.13",
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "ProvadorVirtual.Dominio": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProvadorVirtual.Data.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProvadorVirtual.Data.dll": {}
+        }
+      },
       "ProvadorVirtual.Dominio/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
@@ -1099,42 +1117,6 @@
         },
         "runtime": {
           "bin/placeholder/ProvadorVirtual.Dominio.dll": {}
-        }
-      },
-      "ProvadorVirtual.Infraestrutura.Data/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore": "7.0.13",
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
-          "Microsoft.Extensions.Configuration": "7.0.0",
-          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
-          "Microsoft.Extensions.Configuration.Json": "7.0.0",
-          "ProvadorVirtual.Dominio": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ProvadorVirtual.Infraestrutura.Data.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProvadorVirtual.Infraestrutura.Data.dll": {}
-        }
-      },
-      "ProvadorVirtual.Infraestrutura.Repositorio/1.0.0": {
-        "type": "project",
-        "framework": ".NETCoreApp,Version=v7.0",
-        "dependencies": {
-          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
-          "Microsoft.Extensions.Configuration": "7.0.0",
-          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
-          "Microsoft.Extensions.Configuration.Json": "7.0.0",
-          "ProvadorVirtual.Infraestrutura.Data": "1.0.0",
-          "ProvadorVirtual.Nucleo": "1.0.0"
-        },
-        "compile": {
-          "bin/placeholder/ProvadorVirtual.Infraestrutura.Repositorio.dll": {}
-        },
-        "runtime": {
-          "bin/placeholder/ProvadorVirtual.Infraestrutura.Repositorio.dll": {}
         }
       },
       "ProvadorVirtual.Nucleo/1.0.0": {
@@ -1151,6 +1133,24 @@
         },
         "runtime": {
           "bin/placeholder/ProvadorVirtual.Nucleo.dll": {}
+        }
+      },
+      "ProvadorVirtual.Repositorio/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v7.0",
+        "dependencies": {
+          "Microsoft.EntityFrameworkCore.SqlServer": "7.0.13",
+          "Microsoft.Extensions.Configuration": "7.0.0",
+          "Microsoft.Extensions.Configuration.FileExtensions": "7.0.0",
+          "Microsoft.Extensions.Configuration.Json": "7.0.0",
+          "ProvadorVirtual.Data": "1.0.0",
+          "ProvadorVirtual.Nucleo": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/ProvadorVirtual.Repositorio.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/ProvadorVirtual.Repositorio.dll": {}
         }
       }
     }
@@ -3019,25 +3019,25 @@
         "useSharedDesignerContext.txt"
       ]
     },
+    "ProvadorVirtual.Data/1.0.0": {
+      "type": "project",
+      "path": "../ProvadorVirtual.Infraestrutura.Data/ProvadorVirtual.Data.csproj",
+      "msbuildProject": "../ProvadorVirtual.Infraestrutura.Data/ProvadorVirtual.Data.csproj"
+    },
     "ProvadorVirtual.Dominio/1.0.0": {
       "type": "project",
       "path": "../ProvadorVirtual.Dominio/ProvadorVirtual.Dominio.csproj",
       "msbuildProject": "../ProvadorVirtual.Dominio/ProvadorVirtual.Dominio.csproj"
     },
-    "ProvadorVirtual.Infraestrutura.Data/1.0.0": {
-      "type": "project",
-      "path": "../ProvadorVirtual.Infraestrutura.Data/ProvadorVirtual.Infraestrutura.Data.csproj",
-      "msbuildProject": "../ProvadorVirtual.Infraestrutura.Data/ProvadorVirtual.Infraestrutura.Data.csproj"
-    },
-    "ProvadorVirtual.Infraestrutura.Repositorio/1.0.0": {
-      "type": "project",
-      "path": "../ProvadorVirtual.Infraestrutura.Repositorio/ProvadorVirtual.Infraestrutura.Repositorio.csproj",
-      "msbuildProject": "../ProvadorVirtual.Infraestrutura.Repositorio/ProvadorVirtual.Infraestrutura.Repositorio.csproj"
-    },
     "ProvadorVirtual.Nucleo/1.0.0": {
       "type": "project",
       "path": "../ProvadorVirtual.Nucleo/ProvadorVirtual.Nucleo.csproj",
       "msbuildProject": "../ProvadorVirtual.Nucleo/ProvadorVirtual.Nucleo.csproj"
+    },
+    "ProvadorVirtual.Repositorio/1.0.0": {
+      "type": "project",
+      "path": "../ProvadorVirtual.Infraestrutura.Repositorio/ProvadorVirtual.Repositorio.csproj",
+      "msbuildProject": "../ProvadorVirtual.Infraestrutura.Repositorio/ProvadorVirtual.Repositorio.csproj"
     }
   },
   "projectFileDependencyGroups": {
@@ -3045,8 +3045,8 @@
       "Microsoft.Extensions.Configuration >= 7.0.0",
       "Microsoft.Extensions.Configuration.FileExtensions >= 7.0.0",
       "Microsoft.Extensions.Configuration.Json >= 7.0.0",
-      "ProvadorVirtual.Infraestrutura.Repositorio >= 1.0.0",
-      "ProvadorVirtual.Nucleo >= 1.0.0"
+      "ProvadorVirtual.Nucleo >= 1.0.0",
+      "ProvadorVirtual.Repositorio >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3076,8 +3076,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Infraestrutura.Repositorio.csproj": {
-              "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Infraestrutura.Repositorio.csproj"
+            "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Repositorio.csproj": {
+              "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Repositorio\\ProvadorVirtual.Repositorio.csproj"
             },
             "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Nucleo\\ProvadorVirtual.Nucleo.csproj": {
               "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Nucleo\\ProvadorVirtual.Nucleo.csproj"

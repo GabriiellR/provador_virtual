@@ -6,7 +6,7 @@ using ProvadorVirtual.Nucleo.Interfaces.Repositorio.Administracao;
 using ProvadorVirtual.Nucleo.Interfaces.Services.Administracao;
 using ProvadorVirtual.Servicos.Services.Administracao;
 
-namespace ProvadorVirtual.Infrastrutura.Crosscutting.Ioc
+namespace ProvadorVirtual.Ioc
 {
     public static class ModuleIOC
     {
@@ -29,7 +29,7 @@ namespace ProvadorVirtual.Infrastrutura.Crosscutting.Ioc
 
 
             service.AddScoped<IServiceUsuario, ServiceUsuario>();
-            
+
 
 
             service.AddScoped<IRepositoryUsuario, RepositoryUsuario>();
