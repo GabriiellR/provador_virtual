@@ -2989,9 +2989,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj",
-      "projectName": "ProvadorVirtual.Infraestrutura.Data",
-      "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Data.csproj",
+      "projectName": "ProvadorVirtual.Data",
+      "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Data.csproj",
       "packagesPath": "C:\\Users\\Gabriel Dias\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\obj\\",
       "projectStyle": "PackageReference",

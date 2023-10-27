@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "0cQ4ZLMy0Gbyaj8PeU+iJoX9L7gWsfyXG2r92WXc75d4+s51B+CLLZ3g2nqLGieegUR+ctRS+Cn71CpyH9GH1w==",
+  "dgSpecHash": "HPgXo46s1oTcL3CYteoHsuQXZcdz1dZB6YMXjWMIi7ogYUYm7tOyZGK7JPjgj9ceDjERC7pwIAY7voqWtbc3zw==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj",
+  "projectFilePath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\ProvadorVirtual.Ioc.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\automapper\\12.0.1\\automapper.12.0.1.nupkg.sha512",
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\automapper.extensions.microsoft.dependencyinjection\\12.0.1\\automapper.extensions.microsoft.dependencyinjection.12.0.1.nupkg.sha512",

@@ -1,22 +1,26 @@
 using Microsoft.AspNetCore.Authentication.JwtBearer;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.IdentityModel.Tokens;
-using ProvadorVirtual.Infraestrutura.Data;
-using ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores.Profiles;
-using ProvadorVirtual.Infrastrutura.Crosscutting.Ioc;
+using ProvadorVirtual.Adaptadores.Profiles;
+using ProvadorVirtual.Aplicacao.Interfaces.Administracao;
+using ProvadorVirtual.Aplicacao.Services;
+using ProvadorVirtual.Data;
+using ProvadorVirtual.Nucleo.Interfaces.Repositorio.Administracao;
+using ProvadorVirtual.Nucleo.Interfaces.Services.Administracao;
+using ProvadorVirtual.Repositorio.Administracao;
+using ProvadorVirtual.Servicos.Services.Administracao;
 using System.Text;
 using System.Text.Json.Serialization;
+//using ProvadorVirtual.Infraestrutura.
+
 
 var builder = WebApplication.CreateBuilder(args);
 
-// Add services to the container.
-
 builder.Services.AddControllers();
-// Learn more about configuring Swagger/OpenAPI at https://aka.ms/aspnetcore/swashbuckle
 builder.Services.AddEndpointsApiExplorer();
 builder.Services.AddSwaggerGen();
-
 builder.Services.AddAutoMapper(config => config.AddMaps(typeof(UsuarioProfile).Assembly));
+
 
 var connectionString = builder.Configuration.GetConnectionString("sqlServer");
 builder.Services.AddDbContext<Context>(prop => prop.UseSqlServer(connectionString,
@@ -46,9 +50,13 @@ builder.Services.AddControllers().AddJsonOptions(x =>
    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 builder.Services.AddSwaggerGen();
+//builder.Services.RegisterModules();
 
+builder.Services.AddScoped<IApplicationServiceUsuario, ApplicationServiceUsuario>();
+builder.Services.AddScoped<IApplicationServiceTokenService, ApplicationServiceTokenService>();
+builder.Services.AddScoped<IServiceUsuario, ServiceUsuario>();
+builder.Services.AddScoped<IRepositoryUsuario, RepositoryUsuario>();
 
-builder.Services.RegisterModules();
 
 var app = builder.Build();
 

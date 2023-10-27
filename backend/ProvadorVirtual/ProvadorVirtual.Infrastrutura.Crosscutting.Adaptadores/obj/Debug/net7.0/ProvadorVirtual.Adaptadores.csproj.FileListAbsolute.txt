@@ -1,0 +1,17 @@
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\bin\Debug\net7.0\ProvadorVirtual.Adaptadores.deps.json
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\bin\Debug\net7.0\ProvadorVirtual.Adaptadores.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\bin\Debug\net7.0\ProvadorVirtual.Adaptadores.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\bin\Debug\net7.0\ProvadorVirtual.Dominio.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\bin\Debug\net7.0\ProvadorVirtual.DTO.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\bin\Debug\net7.0\ProvadorVirtual.Dominio.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\bin\Debug\net7.0\ProvadorVirtual.DTO.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\ProvadorVirtual.Adaptadores.csproj.AssemblyReference.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\ProvadorVirtual.Adaptadores.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\ProvadorVirtual.Adaptadores.AssemblyInfoInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\ProvadorVirtual.Adaptadores.AssemblyInfo.cs
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\ProvadorVirtual.Adaptadores.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\ProvadorVirtual.Adaptadores.csproj.CopyComplete
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\ProvadorVirtual.Adaptadores.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\refint\ProvadorVirtual.Adaptadores.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\ProvadorVirtual.Adaptadores.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infrastrutura.Crosscutting.Adaptadores\obj\Debug\net7.0\ref\ProvadorVirtual.Adaptadores.dll

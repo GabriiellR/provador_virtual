@@ -3183,9 +3183,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj",
-      "projectName": "ProvadorVirtual.Infrastrutura.CrossCutting.Ioc",
-      "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc.csproj",
+      "projectUniqueName": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\ProvadorVirtual.Ioc.csproj",
+      "projectName": "ProvadorVirtual.Ioc",
+      "projectPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\ProvadorVirtual.Ioc.csproj",
       "packagesPath": "C:\\Users\\Gabriel Dias\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infrastrutura.CrossCutting.Ioc\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "q4ekkkOti0gXHraEtVRSobw5Lb0Ml1sUEqjfabtk9PzzYXzdcFQCUcv0r+kugQp4WA39Ud+ZcQDeMrlctqly7Q==",
+  "dgSpecHash": "xx/+MMJwIUuFyV0BpSbdB4wX6sd9kyvMYKUQOb8vfCdAFxQqAbblCoGFhTIjyM6FD1Thjs5NKLdLFf/XBUfbcQ==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Infraestrutura.Data.csproj",
+  "projectFilePath": "C:\\Users\\Gabriel Dias\\Desktop\\provador_virtual\\backend\\ProvadorVirtual\\ProvadorVirtual.Infraestrutura.Data\\ProvadorVirtual.Data.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\azure.core\\1.25.0\\azure.core.1.25.0.nupkg.sha512",
     "C:\\Users\\Gabriel Dias\\.nuget\\packages\\azure.identity\\1.7.0\\azure.identity.1.7.0.nupkg.sha512",

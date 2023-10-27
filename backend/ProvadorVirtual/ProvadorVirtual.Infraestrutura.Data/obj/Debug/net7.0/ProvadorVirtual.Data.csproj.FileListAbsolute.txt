@@ -1,0 +1,15 @@
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\bin\Debug\net7.0\ProvadorVirtual.Data.deps.json
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\bin\Debug\net7.0\ProvadorVirtual.Data.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\bin\Debug\net7.0\ProvadorVirtual.Data.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\bin\Debug\net7.0\ProvadorVirtual.Dominio.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\bin\Debug\net7.0\ProvadorVirtual.Dominio.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\ProvadorVirtual.Data.csproj.AssemblyReference.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\ProvadorVirtual.Data.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\ProvadorVirtual.Data.AssemblyInfoInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\ProvadorVirtual.Data.AssemblyInfo.cs
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\ProvadorVirtual.Data.csproj.CoreCompileInputs.cache
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\ProvadorVirtual.Data.csproj.CopyComplete
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\ProvadorVirtual.Data.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\refint\ProvadorVirtual.Data.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\ProvadorVirtual.Data.pdb
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Data\obj\Debug\net7.0\ref\ProvadorVirtual.Data.dll
