@@ -15,13 +15,6 @@ namespace ProvadorVirtual.Controllers.Administracao
             _applicationServiceUsuario = applicationServiceUsuario;
         }
 
-        [Authorize]
-        [HttpGet("GetAll")]
-        public ActionResult GetAll()
-        {
-            var entity = _applicationServiceUsuario.GetAll();
-            return Ok(entity);
-        }
 
         [HttpPost("autenticar")]
         public ActionResult Autenticar(string email, string senha)
@@ -29,9 +22,15 @@ namespace ProvadorVirtual.Controllers.Administracao
             if (email.IsNullOrEmpty() || senha.IsNullOrEmpty())
                 BadRequest("Os campos de email e senha devem ser preenchidos");
 
-            var token = _applicationServiceUsuario.Autenticar(email, senha);
-
-            return Ok(token);
+            try
+            {
+                var token = _applicationServiceUsuario.Autenticar(email, senha);
+                return Ok(token);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex.ToString());
+            }
         }
     }
 }

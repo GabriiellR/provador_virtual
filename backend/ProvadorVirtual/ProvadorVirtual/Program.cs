@@ -11,8 +11,6 @@ using ProvadorVirtual.Repositorio.Administracao;
 using ProvadorVirtual.Servicos.Services.Administracao;
 using System.Text;
 using System.Text.Json.Serialization;
-//using ProvadorVirtual.Infraestrutura.
-
 
 var builder = WebApplication.CreateBuilder(args);
 
@@ -50,6 +48,8 @@ builder.Services.AddControllers().AddJsonOptions(x =>
    x.JsonSerializerOptions.ReferenceHandler = ReferenceHandler.IgnoreCycles);
 
 builder.Services.AddSwaggerGen();
+
+//TODO: CORRIGIR PROBLEMA DE EXTENSAO MODULE IOC E ARMAZENAR A INVERSAO DE CONTROLER LA
 //builder.Services.RegisterModules();
 
 builder.Services.AddScoped<IApplicationServiceUsuario, ApplicationServiceUsuario>();

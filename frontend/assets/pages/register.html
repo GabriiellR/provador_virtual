@@ -29,31 +29,35 @@
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="password" placeholder="Senha" required>
+                    <input type="email" placeholder="Confirme o e-mail" required>
                     <i class='bx bxs-lock-alt'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="CPF" required>
+                    <input type="text" placeholder="CPF" id="cpf">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Número" required>
+                    <input type="text" placeholder="CEP" onfocusout="BuscarEndereco();" id="cep">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Endereço" required>
+                    <input type="text" placeholder="Número" id="numero" required>
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Bairro" required>
+                    <input type="text" placeholder="Endereço" id="endereco">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Cidade" required>
+                    <input type="text" placeholder="Bairro" id="bairro">
                     <i class='bx bxs-user'></i>
                 </div>
                 <div class="input-box">
-                    <input type="text" placeholder="Estado" required>
+                    <input type="text" placeholder="Cidade" id="cidade" >
+                    <i class='bx bxs-user'></i>
+                </div>
+                <div class="input-box">
+                    <input type="text" placeholder="Estado" id="estado">
                     <i class='bx bxs-user'></i>
                 </div>
 
@@ -64,16 +68,9 @@
 
         </form>
     </div>
-    <script>
-        window.onload = function () {
-
-            document.getElementById('registro-button').addEventListener('click', function () {
-                window.location.href = 'login.html';
-            });
-        };
-
-
-    </script>
+    <script type="text/javascript" src="../js/public/jquery-3.7.1.js"></script>
+    <script type="text/javascript" src="../js/public/jquery.mask.js"></script>
+    <script type="text/javascript" src="../js/register.js"></script>
 </body>
 
 </html>
