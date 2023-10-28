@@ -17,3 +17,5 @@ C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorV
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\refint\ProvadorVirtual.Repositorio.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ProvadorVirtual.Repositorio.pdb
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ref\ProvadorVirtual.Repositorio.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\bin\Debug\net7.0\ProvadorVirtual.Repositorio.runtimeconfig.json
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Infraestrutura.Repositorio\obj\Debug\net7.0\ProvadorVirtual.Repositorio.genruntimeconfig.cache

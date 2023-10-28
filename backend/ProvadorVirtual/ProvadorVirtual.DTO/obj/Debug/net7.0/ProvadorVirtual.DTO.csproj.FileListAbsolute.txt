@@ -10,3 +10,5 @@ C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorV
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.DTO\obj\Debug\net7.0\refint\ProvadorVirtual.DTO.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.DTO\obj\Debug\net7.0\ProvadorVirtual.DTO.pdb
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.DTO\obj\Debug\net7.0\ref\ProvadorVirtual.DTO.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.DTO\bin\Debug\net7.0\ProvadorVirtual.DTO.runtimeconfig.json
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.DTO\obj\Debug\net7.0\ProvadorVirtual.DTO.genruntimeconfig.cache

@@ -90,3 +90,8 @@ C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorV
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\obj\Debug\net7.0\ProvadorVirtual.pdb
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\obj\Debug\net7.0\ProvadorVirtual.genruntimeconfig.cache
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\obj\Debug\net7.0\ref\ProvadorVirtual.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\Humanizer.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\Microsoft.EntityFrameworkCore.Design.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\Microsoft.Extensions.DependencyModel.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\Mono.TextTemplating.dll
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual\bin\Debug\net7.0\System.CodeDom.dll

@@ -13,3 +13,5 @@ C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorV
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Nucleo\bin\Debug\net7.0\ProvadorVirtual.Dominio.dll
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Nucleo\bin\Debug\net7.0\ProvadorVirtual.Dominio.pdb
 C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Nucleo\obj\Debug\net7.0\ProvadorVirtual.Nucleo.csproj.CopyComplete
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Nucleo\bin\Debug\net7.0\ProvadorVirtual.Nucleo.runtimeconfig.json
+C:\Users\Gabriel Dias\Desktop\provador_virtual\backend\ProvadorVirtual\ProvadorVirtual.Nucleo\obj\Debug\net7.0\ProvadorVirtual.Nucleo.genruntimeconfig.cache
