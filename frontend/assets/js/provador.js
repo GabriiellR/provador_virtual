@@ -156,8 +156,6 @@ document.addEventListener('DOMContentLoaded', function () {
 	// Carregar a primeira imagem ao iniciar a página
 	produtoImagem.src = `../images/provador/1.png`;
 	atualizarDetalhes();
-	
-
 });
 
 // function vestir() {

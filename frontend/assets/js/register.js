@@ -62,7 +62,7 @@ function CadastrarUsuario() {
     var senha = $('#senha').val();
     var senhaConfirmacao = $('#senha-confirmacao').val();
 
-    var camposValidos = HelperClass.ValidarCampos(nome, cep, bairro, cidade, estado, endereco, dataNascimento, email, emailConfirmacao, senha, senhaConfirmacao)
+    var camposValidos = HelperClass.ValidarCampos(nome, bairro, cidade, estado, endereco, dataNascimento, email, emailConfirmacao, senha, senhaConfirmacao)
 
     if (!camposValidos) {
         var mensagem = "Preencha todos os campos para continuar";

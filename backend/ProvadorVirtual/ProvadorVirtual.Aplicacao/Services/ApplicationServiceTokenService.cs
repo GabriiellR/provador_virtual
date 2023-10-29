@@ -25,7 +25,8 @@ namespace ProvadorVirtual.Aplicacao.Services
                 Subject = new ClaimsIdentity(new Claim[]
                 {
                     new Claim("id", usuario.Id.ToString()),
-                    new Claim(ClaimTypes.Name, usuario.Nome),
+                    new Claim("nome", usuario.Nome),
+                    new Claim("email", usuario.Nome),
                     new Claim(ClaimTypes.Email, usuario.Email),
                 }),
 

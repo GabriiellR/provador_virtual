@@ -58,6 +58,19 @@ builder.Services.AddScoped<IApplicationServiceTokenService, ApplicationServiceTo
 builder.Services.AddScoped<IServiceUsuario, ServiceUsuario>();
 builder.Services.AddScoped<IRepositoryUsuario, RepositoryUsuario>();
 
+builder.Services.AddScoped<IApplicationServiceFavoritos, ApplicationServiceFavoritos>();
+builder.Services.AddScoped<IServiceFavoritos, ServiceFavoritos>();
+builder.Services.AddScoped<IRepositoryFavoritos, RepositoryFavoritos>();
+
+builder.Services.AddScoped<IApplicationServiceProduto, ApplicationServiceProduto>();
+builder.Services.AddScoped<IServiceProduto, ServiceProduto>();
+builder.Services.AddScoped<IRepositoryProduto, RepositoryProduto>();
+
+builder.Services.AddScoped<IApplicationServiceProdutoImagemProvador, ApplicationServiceProdutoImagemProvador>();
+builder.Services.AddScoped<IServiceProdutoImagemProvador, ServiceProdutoImagemProvador>();
+builder.Services.AddScoped<IRepositoryProdutoImagemProvador, RepositoryProdutoImagemProvador>();
+
+
 
 var app = builder.Build();
 

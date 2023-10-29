@@ -41,9 +41,24 @@ namespace ProvadorVirtual.Controllers.Administracao
                 return BadRequest("O dto não pode ser nulo");
 
             var usuario = _applicationServiceUsuario.AddOrUpdate(dto);
+            usuario.Senha = "";
 
 
             return Ok(usuario);
         }
+
+        [Authorize]
+        [HttpGet("{usuarioId}")]
+        public ActionResult GetById(int usuarioId)
+        {
+            if (usuarioId <= 0)
+                return BadRequest("UsuárioId inválido");
+
+            var usuario = _applicationServiceUsuario.GetById(usuarioId);
+            usuario.Senha = "";
+
+            return Ok(usuario);
+        }
+
     }
 }

@@ -1,1 +1,7 @@
-frontend/assets/images/
+ //return _mapper.Map<destino>(origem);
+
+// Instalar SqlServer
+// Criar database chamado provadorvirtual
+// Verificar string de conexão
+// Executar update-database
+// Popular tabela de produtos (Script disponibilizado)

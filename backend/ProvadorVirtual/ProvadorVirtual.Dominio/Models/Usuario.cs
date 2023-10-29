@@ -10,6 +10,7 @@
         public string Cidade { get; set; } = string.Empty;
         public string Estado { get; set; } = string.Empty;
         public string Endereco { get; set; } = string.Empty;
-        public DateTime DataNascimento { get; set; }       
+        public DateTime DataNascimento { get; set; }   
+        public virtual List<Favoritos>? Favoritos { get; set; }
     }
 }

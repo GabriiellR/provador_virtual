@@ -1,0 +1,6 @@
+insert into categoria(nome) values ('Clássica');
+insert into categoria(nome) values ('Borboleta');
+insert into categoria(nome) values ('Slim');
+insert into categoria(nome) values ('Laço');
+insert into categoria(nome) values ('Gravata-nó');
+insert into categoria(nome) values ('Ponta reta');

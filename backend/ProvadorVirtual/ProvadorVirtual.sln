@@ -36,7 +36,7 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.Aplicacao",
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.DTO", "ProvadorVirtual.DTO\ProvadorVirtual.DTO.csproj", "{5C0EB6CB-5B7B-4A11-9F90-3824C44FAE84}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ProvadorVirtual.IOC", "ProvadorVirtual.IOC\ProvadorVirtual.IOC.csproj", "{F0A074F2-16EA-4A04-9990-BCF617114845}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ProvadorVirtual.IOC", "ProvadorVirtual.IOC\ProvadorVirtual.IOC.csproj", "{F0A074F2-16EA-4A04-9990-BCF617114845}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution

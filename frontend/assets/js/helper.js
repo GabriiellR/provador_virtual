@@ -10,7 +10,7 @@ class HelperClass {
             showConfirmButton: false,
             timer: timeout,
             timerProgressBar: true,
-            didOpen: callback
+            didClose: callback
         })
 
         Toast.fire({
@@ -27,7 +27,7 @@ class HelperClass {
             showConfirmButton: false,
             timer: timeout,
             timerProgressBar: true,
-            didOpen: callback
+            didClose: callback
         })
 
         Toast.fire({
@@ -49,5 +49,13 @@ class HelperClass {
 
         return valido;
     }
+
+    static ParseJwt(token) {
+        try {
+            return JSON.parse(atob(token.split('.')[1]));
+        } catch (e) {
+            return null;
+        }
+    };
 }
 var helperClass = new HelperClass();
