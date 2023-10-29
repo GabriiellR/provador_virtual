@@ -1,6 +1,73 @@
+../images/provador/nomeImage
+
+
+--------- CATEGORIAS
+
 insert into categoria(nome) values ('Clássica');
 insert into categoria(nome) values ('Borboleta');
 insert into categoria(nome) values ('Slim');
 insert into categoria(nome) values ('Laço');
 insert into categoria(nome) values ('Gravata-nó');
 insert into categoria(nome) values ('Ponta reta');
+
+-------- PRODUTOS
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/01.png', 'descricao', 1, 'images/provador/01.png');
+
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/02.png', 'descricao', 1, 'images/provador/02.png');
+
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/03.png', 'descricao', 1, 'images/provador/03.png');
+
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/04.png', 'descricao', 1, 'images/provador/04.png');
+
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/05.png', 'descricao', 1, 'images/provador/05.png');
+
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/06.png', 'descricao', 1, 'images/provador/06.png');
+
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/07.png', 'descricao', 1, 'images/provador/07.png');
+
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/08.png', 'descricao', 1, 'images/provador/08.png');
+
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/09.png', 'descricao', 1, 'images/provador/09.png');
+
+insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
+VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/10.png', 'descricao', 1, 'images/provador/10.png');
+
+---------- IMAGENS
+insert into produto_imagem_provador(produto_id, imagem) values (1, 'images/provador/01_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (1, 'images/provador/01_preto.png');
+
+insert into produto_imagem_provador(produto_id, imagem) values (2, 'images/provador/02_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (2, 'images/provador/02_preto.png');
+
+insert into produto_imagem_provador(produto_id, imagem) values (3, 'images/provador/03_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (3, 'images/provador/03_preto.png');
+
+insert into produto_imagem_provador(produto_id, imagem) values (4, 'images/provador/04_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (4, 'images/provador/04_preto.png');
+
+insert into produto_imagem_provador(produto_id, imagem) values (5, 'images/provador/05_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (5, 'images/provador/05_preto.png');
+
+insert into produto_imagem_provador(produto_id, imagem) values (6, 'images/provador/06_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (6, 'images/provador/06_preto.png');
+
+insert into produto_imagem_provador(produto_id, imagem) values (7, 'images/provador/07_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (7, 'images/provador/07_preto.png');
+
+insert into produto_imagem_provador(produto_id, imagem) values (8, 'images/provador/08_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (8, 'images/provador/08_preto.png');
+
+insert into produto_imagem_provador(produto_id, imagem) values (9, 'images/provador/09_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (9, 'images/provador/09_preto.png');
+
+insert into produto_imagem_provador(produto_id, imagem) values (10, 'images/provador/04_cinza.png');
+insert into produto_imagem_provador(produto_id, imagem) values (10, 'images/provador/04_preto.png');

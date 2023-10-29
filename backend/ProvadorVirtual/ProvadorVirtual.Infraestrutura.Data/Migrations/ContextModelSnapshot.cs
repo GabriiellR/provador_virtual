@@ -146,7 +146,7 @@ namespace ProvadorVirtual.Infraestrutura.Data.Migrations
 
                     b.HasIndex("ProdutoId");
 
-                    b.ToTable("produto_iamgem_provador", (string)null);
+                    b.ToTable("produto_imagem_provador", (string)null);
                 });
 
             modelBuilder.Entity("ProvadorVirtual.Dominio.Models.Usuario", b =>
