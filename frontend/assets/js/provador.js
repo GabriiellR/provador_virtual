@@ -1,3 +1,5 @@
+var url = `${HelperClass.urlApi}/administracao`;
+var produtos = {};
 const hamburger = document.querySelector('.header .nav-bar .nav-list .hamburger');
 const mobile_menu = document.querySelector('.header .nav-bar .nav-list ul');
 const menu_item = document.querySelectorAll('.header .nav-bar .nav-list ul li a');
@@ -46,7 +48,34 @@ function openImage(imageId) {
 	}
 }
 
+function BuscarProdutos() {
+
+	var settings = {
+		"url": `${url}/produto/detalhes`,
+		"method": "GET",
+		"headers": {
+			'Authorization': 'Bearer <token>',
+			"content-type": "application/json"
+		},
+	}
+
+	$.ajax(settings).done((response) => {
+
+		console.log(response);
+
+
+	}).fail((jqXHR) => {
+		var mensagem = `${jqXHR.status} - Não foi possível buscar os produtos`;
+		var timeout = 2000;
+		HelperClass.MostrarToastErro(mensagem, timeout);
+	})
+
+}
+
 document.addEventListener('DOMContentLoaded', function () {
+
+	BuscarProdutos();
+
 	const openModalButton = document.querySelector('.open-modal');
 	const modal = document.getElementById('modal');
 	const closeModalButton = document.getElementById('close-modal');
@@ -70,7 +99,7 @@ document.addEventListener('DOMContentLoaded', function () {
 	const setaEsquerda = document.getElementById('setaEsquerda');
 	const setaDireita = document.getElementById('setaDireita');
 	const detalhesProduto = document.getElementById('detalhesProduto');
-	
+
 
 	const detalhesImagens = [
 		{
@@ -145,139 +174,127 @@ document.addEventListener('DOMContentLoaded', function () {
 		produtoImagem.src = `../images/provador/${imagemAtual + 1}.png`;
 		atualizarDetalhes();
 	});
-	
+
 	setaDireita.addEventListener('click', function () {
 		console.log('seta', imagemAtual)
 		imagemAtual = (imagemAtual + 1) % detalhesImagens.length;
 		produtoImagem.src = `../images/provador/${imagemAtual + 1}.png`;
 		atualizarDetalhes();
 	});
-	
+
 	// Carregar a primeira imagem ao iniciar a página
 	produtoImagem.src = `../images/provador/1.png`;
 	atualizarDetalhes();
 });
 
-// function vestir() {
-// 		if (imagemAtual === 0) {
-// 			imagemBase.src = '../images/provador/a.png';
-// 		} else if (imagemAtual === 1) {
-// 			imagemBase.src = '../images/provador/b.png';
-// 		} else if (imagemAtual === 2) {
-// 			imagemBase.src = '../images/provador/c.png';
-// 		}
-// }
 
 function vestir() {
 
-    if (imagemAtual === 0) {
-        anime({
-            targets: imagemBase,
-            opacity: [1, 0],
-            scale: [1, 1.05], 
-            translateX: [0, 10], 
-            duration: 500,
-            easing: 'easeInOutQuad',
-            complete: function() {
-                imagemBase.src = '../images/provador/TernoPreto01.png';
-                anime({
-                    targets: imagemBase,
-                    opacity: [0, 1],
-                    scale: [1.05, 1],
-                    translateX: [10, 0], 
-                    duration: 500,
-                    easing: 'easeInOutQuad'
-                });
-            }
-        });
-    } else if (imagemAtual === 1) {
-        anime({
-            targets: imagemBase,
-            opacity: [1, 0],
-            scale: [1, 1.05],
-            translateX: [0, 10],
-            duration: 500,
-            easing: 'easeInOutQuad',
-            complete: function() {
-                imagemBase.src = '../images/provador/TernoPreto02.png';
-                anime({
-                    targets: imagemBase,
-                    opacity: [0, 1],
-                    scale: [1.05, 1],
-                    translateX: [10, 0],
-                    duration: 500,
-                    easing: 'easeInOutQuad'
-                });
-            }
-        });
-    }
-	else if (imagemAtual === 2) 
-	{
-        anime({
-            targets: imagemBase,
-            opacity: [1, 0],
-            scale: [1, 1.05],
-            translateX: [0, 10],
-            duration: 500,
-            easing: 'easeInOutQuad',
-            complete: function() {
-                imagemBase.src = '../images/provador/TernoPreto03.png';
-                anime({
-                    targets: imagemBase,
-                    opacity: [0, 1],
-                    scale: [1.05, 1],
-                    translateX: [10, 0],
-                    duration: 500,
-                    easing: 'easeInOutQuad'
-                });
-            }
-        });
-		
-    }
-	else if (imagemAtual === 3) 
-	{
-        anime({
-            targets: imagemBase,
-            opacity: [1, 0],
-            scale: [1, 1.05],
-            translateX: [0, 10],
-            duration: 500,
-            easing: 'easeInOutQuad',
-            complete: function() {
-                imagemBase.src = '../images/provador/TernoPreto04.png';
-                anime({
-                    targets: imagemBase,
-                    opacity: [0, 1],
-                    scale: [1.05, 1],
-                    translateX: [10, 0],
-                    duration: 500,
-                    easing: 'easeInOutQuad'
-                });
-            }
-        });
-		
-    }
-	else if (imagemAtual === 4) 
-	{
-        anime({
-            targets: imagemBase,
-            opacity: [1, 0],
-            scale: [1, 1.05],
-            translateX: [0, 10],
-            duration: 500,
-            easing: 'easeInOutQuad',
-            complete: function() {
-                imagemBase.src = '../images/provador/TernoCinza01.png';
-                anime({
-                    targets: imagemBase,
-                    opacity: [0, 1],
-                    scale: [1.05, 1],
-                    translateX: [10, 0],
-                    duration: 500,
-                    easing: 'easeInOutQuad'
-                });
-            }
-        });
-		
-    }
+	if (imagemAtual === 0) {
+		anime({
+			targets: imagemBase,
+			opacity: [1, 0],
+			scale: [1, 1.05],
+			translateX: [0, 10],
+			duration: 500,
+			easing: 'easeInOutQuad',
+			complete: function () {
+				imagemBase.src = '../images/provador/TernoPreto01.png';
+				anime({
+					targets: imagemBase,
+					opacity: [0, 1],
+					scale: [1.05, 1],
+					translateX: [10, 0],
+					duration: 500,
+					easing: 'easeInOutQuad'
+				});
+			}
+		});
+	} else if (imagemAtual === 1) {
+		anime({
+			targets: imagemBase,
+			opacity: [1, 0],
+			scale: [1, 1.05],
+			translateX: [0, 10],
+			duration: 500,
+			easing: 'easeInOutQuad',
+			complete: function () {
+				imagemBase.src = '../images/provador/TernoPreto02.png';
+				anime({
+					targets: imagemBase,
+					opacity: [0, 1],
+					scale: [1.05, 1],
+					translateX: [10, 0],
+					duration: 500,
+					easing: 'easeInOutQuad'
+				});
+			}
+		});
+	}
+	else if (imagemAtual === 2) {
+		anime({
+			targets: imagemBase,
+			opacity: [1, 0],
+			scale: [1, 1.05],
+			translateX: [0, 10],
+			duration: 500,
+			easing: 'easeInOutQuad',
+			complete: function () {
+				imagemBase.src = '../images/provador/TernoPreto03.png';
+				anime({
+					targets: imagemBase,
+					opacity: [0, 1],
+					scale: [1.05, 1],
+					translateX: [10, 0],
+					duration: 500,
+					easing: 'easeInOutQuad'
+				});
+			}
+		});
+
+	}
+	else if (imagemAtual === 3) {
+		anime({
+			targets: imagemBase,
+			opacity: [1, 0],
+			scale: [1, 1.05],
+			translateX: [0, 10],
+			duration: 500,
+			easing: 'easeInOutQuad',
+			complete: function () {
+				imagemBase.src = '../images/provador/TernoPreto04.png';
+				anime({
+					targets: imagemBase,
+					opacity: [0, 1],
+					scale: [1.05, 1],
+					translateX: [10, 0],
+					duration: 500,
+					easing: 'easeInOutQuad'
+				});
+			}
+		});
+
+	}
+	else if (imagemAtual === 4) {
+		anime({
+			targets: imagemBase,
+			opacity: [1, 0],
+			scale: [1, 1.05],
+			translateX: [0, 10],
+			duration: 500,
+			easing: 'easeInOutQuad',
+			complete: function () {
+				imagemBase.src = '../images/provador/TernoCinza01.png';
+				anime({
+					targets: imagemBase,
+					opacity: [0, 1],
+					scale: [1.05, 1],
+					translateX: [10, 0],
+					duration: 500,
+					easing: 'easeInOutQuad'
+				});
+			}
+		});
+
+	}
 }

@@ -15,7 +15,11 @@ namespace ProvadorVirtual.Repositorio.Administracao
 
         public List<Produto> GetWithAllInclude()
         {
-            return _context.Produto.Include(prop => prop.Categoria).Include(prop => prop.Favoritos).ToList();
+            return _context.Produto
+                           .Include(prop => prop.Categoria)
+                           .Include(prop => prop.Favoritos)
+                           .Include(prop=>prop.ProdutoImagensProvador)
+                           .ToList();
         }
     }
 }

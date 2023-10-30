@@ -11,7 +11,7 @@
         public string Descricao { get; set; } = string.Empty;
         public int CategoriaId { get; set; }
         public CategoriaDTO? Categoria { get; set; }
-        public List<ProdutoImagemProvadorDTO>? ProdutoImagemProvador { get; set; }
+        public List<ProdutoImagemProvadorDTO>? ProdutoImagensProvador { get; set; }
         public List<FavoritosDTO>? Favoritos { get; set; }    
     }
 }
