@@ -6,9 +6,48 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="../css/provador.css">
   <link rel="stylesheet" href="../css/footer.css">
+  <link rel="stylesheet" href="../css/libs/swiper-bundle.min.css" />
   <link rel="shortcut icon" href="../images/logo/logo.png" type="image/x-icon">
   <title>TC - Moda Masculina</title>
 </head>
+
+<style>
+  html,
+  body {
+    position: relative;
+    height: 100%;
+  }
+
+  body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color: #000;
+    margin: 0;
+    padding: 0;
+  }
+
+  .swiper {
+    width: 100%;
+    height: 100%;
+  }
+
+  .swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background-color: rgba(1,1,1,0);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    width: 80%;
+    height: 100%;
+    object-fit: cover;
+  }
+</style>
 
 <body>
   <section id="header">
@@ -120,7 +159,19 @@
 
       <div class="modal-content">
         <div class="image-details">
-          <img src="../images/provador/base.png" alt="Imagem do Produto" id="imagemBase">
+
+          <div class="swiper mySwiper">
+            
+            <div class="swiper-wrapper">
+              <div class="swiper-slide"><img src="../images/provador/base.png" alt="Imagem do Produto" class="imagemCombinacao"></div>
+            </div>
+
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-pagination"></div>
+          </div>
+
+
         </div>
 
         <div class="container-carousel">
@@ -137,6 +188,8 @@
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+
+  <script type="text/javascript" src="../js/libs/swiper.js"></script>
   <script type="text/javascript" src="../js/libs/jquery-3.7.1.js"></script>
   <script type="text/javascript" src="../js/libs/sweetalert2@11.js"></script>
   <script type="text/javascript" src="../js/helper.js"></script>

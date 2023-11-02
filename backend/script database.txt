@@ -41,6 +41,7 @@ VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/09.png', 'des
 insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
 VALUES('Gravata', '100', 'cor', 'Média', 'seda', 'images/products/10.png', 'descricao', 1, 'images/provador/10.png');
 
+
 ---------- IMAGENS
 insert into produto_imagem_provador(produto_id, imagem) values (1, 'images/provador/01_cinza.png');
 insert into produto_imagem_provador(produto_id, imagem) values (1, 'images/provador/01_preto.png');

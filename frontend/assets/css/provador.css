@@ -583,6 +583,7 @@ p {
 	width: 90%;
 	height: 80%;
 	position: relative;
+	overflow: hidden;
 }
 
 .modal-header {
@@ -629,6 +630,9 @@ p {
 	flex: 1;
 	padding: 20px;
 	color: #fff;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-around;
 	text-align: left;
 }
 
@@ -721,10 +725,11 @@ p {
 	height: 100%;
 	border-radius: 8px;
 	overflow: hidden;
-	position: absolute;
+	/* position: absolute; */
 	display: flex;
 	justify-content: center;
 	align-items: center;
+	align-content: center;
 	top: -4%;
 
 }

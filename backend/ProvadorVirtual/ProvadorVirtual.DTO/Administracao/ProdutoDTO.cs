@@ -10,6 +10,7 @@
         public string Imagem { get; set; } = string.Empty;
         public string Descricao { get; set; } = string.Empty;
         public int CategoriaId { get; set; }
+        public string ImagemGravataProvador { get; set; } = string.Empty;
         public CategoriaDTO? Categoria { get; set; }
         public List<ProdutoImagemProvadorDTO>? ProdutoImagensProvador { get; set; }
         public List<FavoritosDTO>? Favoritos { get; set; }    

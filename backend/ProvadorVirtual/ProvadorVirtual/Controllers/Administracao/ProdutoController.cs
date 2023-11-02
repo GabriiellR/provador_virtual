@@ -22,7 +22,6 @@ namespace ProvadorVirtual.Controllers.Administracao
             return Ok(produtos);
         }
 
-        [Authorize]
         [HttpGet("detalhes")]
         public ActionResult GetWithAllInclude()
         {
