@@ -2,11 +2,8 @@
 
 // Instalar SqlServer
 // Criar database chamado provadorvirtual
-// Verificar string de conexão
+// Verificar string de conexão de acordo com o sql que voce subiu
 // Executar update-database
-// Popular tabela de produtos (Script disponibilizado)
+// Popular o banco com o script disponibilizado
 
-
-insert into produtos(nome, preco, cor, tamanho, material, imagem, descricao, categoria_id, imagem_gravata_provador)
-values ('Gravata', '100', 'cor', 'Média', 'seda', 'referenciaTimeline', 'descricao', 1, 'imagemExibidaNoProvador');
 
