@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="../css/userProfile.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
     <link rel="stylesheet" href="../css/footer.css">
-    <script src="../js/userProfile.js"></script>
+   
     <link rel="shortcut icon" href="../images/logo/logo.png" type="image/x-icon">
 </head>
 
@@ -33,10 +33,10 @@
                             aria-expanded="false">
                             <div class="media align-items-center">
                                 <span class="avatar avatar-sm rounded-circle">
-                                    <img alt="Image placeholder" src="https://ui-avatars.com/api/?name=Filipe">
+                                    <img alt="Image placeholder" class="avatar">
                                 </span>
                                 <div class="media-body ml-2 d-none d-lg-block">
-                                    <span class="mb-0 text-sm  font-weight-bold">Filipe</span>
+                                    <span class="mb-0 text-sm  font-weight-bold nome"></span>
 
                                 </div>
                             </div>
@@ -52,7 +52,7 @@
             <div class="container-fluid d-flex align-items-center">
                 <div class="row">
                     <div class="col-lg-7 col-md-10">
-                        <h1 class="display-2 text-white">Olá Filipe</h1>
+                        <h1 class="display-2 text-white">Olá <span class="nome"></span></h1>
                         <p class="text-white mt-0 mb-5">_______________________________________________________</p>
                     </div>
                 </div>
@@ -66,7 +66,7 @@
                             <div class="col-lg-3 order-lg-2">
                                 <div class="card-profile-image">
                                     <a href="#">
-                                        <img src="https://ui-avatars.com/api/?name=Filipe" class="rounded-circle">
+                                        <img class="rounded-circle avatar">
                                     </a>
                                 </div>
                             </div>
@@ -81,7 +81,7 @@
                                 <img src="../images/logo/logo.png" alt="">
                             </div>
                         </div>
-                        <div class="card-body pt-0 pt-md-4">
+                        <div class="card-body pt-0">
                             <div class="row">
                                 <div class="col">
                                     <div class="card-profile-stats d-flex justify-content-around mt-md-5">
@@ -97,9 +97,7 @@
                                 </div>
                             </div>
                             <div class="text-center">
-                                <h3>
-                                    Filipe<span class="font-weight-light">, 24</span>
-                                </h3>
+                                <h3 class="nome"></h3>
                                 <div class="h5 font-weight-300">
                                     <i class="ni location_pin mr-2"></i>Belo Horizonte, Minas Gerais
                                 </div>
@@ -118,7 +116,7 @@
                                     <h3 class="mb-0">Minha Conta</h3>
                                 </div>
                                 <div class="col-4 text-right" id="divEditar">
-                                    <a href="#!" class="btn btn-sm btn-primary" id="habilitar-button">Editar Dados</a>
+                                    <a href="#!" class="btn btn-sm btn-primary" id="habilitar-button" onclick="EditarInformacoes();">Editar Dados</a>
                                 </div>
                             </div>
                         </div>
@@ -127,6 +125,15 @@
                                 <h6 class="heading-small text-muted mb-4">dados da conta</h6>
                                 <div class="pl-lg-4">
                                     <div class="row">
+
+                                        <div class="col-lg-6">
+                                            <div class="form-group focused">
+                                                <label class="form-control-label" for="input-username">Nome</label>
+                                                <input type="text" id="input-nome"
+                                                    class="form-control form-control-alternative" placeholder="Nome"/>
+                                            </div>
+                                        </div>
+
                                         <div class="col-lg-6">
                                             <div class="form-group">
                                                 <label class="form-control-label" for="input-email">Endereço de Email
@@ -136,21 +143,6 @@
                                                     placeholder="example@example.com">
                                             </div>
                                         </div>
-                                        <div class="col-lg-6">
-                                            <div class="form-group focused">
-                                                <label class="form-control-label" for="input-username">CPF/CNPJ</label>
-                                                <input type="text" id="input-username"
-                                                    class="form-control form-control-alternative" placeholder="CPF/CNPJ"
-                                                    value="00000000000">
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div>
-                                            <a href="#" class="btn btn-sm btn-info mr-4" style="left: 16px;">Alterar
-                                                Senha</a>
-                                        </div>
-
                                     </div>
                                 </div>
                                 <hr class="my-4">
@@ -160,8 +152,8 @@
                                         <div class="col-md-12">
                                             <div class="form-group focused">
                                                 <label class="form-control-label" for="input-address">Endereço</label>
-                                                <input id="input-address" class="form-control form-control-alternative"
-                                                    placeholder="Endereço" value="Nome da Rua, número." type="text">
+                                                <input id="input-endereco" class="form-control form-control-alternative"
+                                                    placeholder="Endereço" type="text">
                                             </div>
                                         </div>
                                     </div>
@@ -169,7 +161,7 @@
                                         <div class="col-lg-4">
                                             <div class="form-group focused">
                                                 <label class="form-control-label" for="input-city">Cidade</label>
-                                                <input type="text" id="input-city"
+                                                <input type="text" id="input-cidade"
                                                     class="form-control form-control-alternative" placeholder="Cidade"
                                                     value="">
                                             </div>
@@ -178,7 +170,7 @@
                                         <div class="col-lg-4">
                                             <div class="form-group focused">
                                                 <label class="form-control-label" for="input-city">Bairro</label>
-                                                <input type="text" id="input-city"
+                                                <input type="text" id="input-bairro"
                                                     class="form-control form-control-alternative" placeholder="Bairro"
                                                     value="">
                                             </div>
@@ -186,7 +178,7 @@
                                         <div class="col-lg-4">
                                             <div class="form-group focused">
                                                 <label class="form-control-label" for="input-country">UF</label>
-                                                <input type="text" id="input-country"
+                                                <input type="text" id="input-estado"
                                                     class="form-control form-control-alternative" placeholder="UF"
                                                     value="">
                                             </div>
@@ -195,17 +187,7 @@
                                             <div class="form-group">
                                                 <label class="form-control-label" for="input-country">CEP
                                                 </label>
-                                                <input type="number" id="input-postal-code"
-                                                    class="form-control form-control-alternative"
-                                                    placeholder="00000-000">
-                                            </div>
-                                        </div>
-                                        <div class="col-lg-4">
-                                            <div class="form-group focused">
-                                                <label class="form-control-label" for="input-city">Adicionais</label>
-                                                <input type="text" id="input-city"
-                                                    class="form-control form-control-alternative"
-                                                    placeholder="Blobo 5, Ap 230" value="">
+                                                <input type="text" id="input-cep" class="form-control form-control-alternative">
                                             </div>
                                         </div>
                                     </div>
@@ -270,6 +252,11 @@
             </div>
         </div>
     </footer>
+
+    <script src="../js/libs/jquery-3.7.1.js"></script>
+    <script src="../js/libs/sweetalert2@11.js"></script>
+    <script src="../js/helper.js"></script>    
+    <script src="../js/userProfile.js"></script> 
 </body>
 
 </html>

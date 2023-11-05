@@ -11,12 +11,14 @@ namespace ProvadorVirtual.Aplicacao.Services
     {
         readonly IServiceUsuario _serviceUsuario;
         readonly IApplicationServiceTokenService _applicationServiceTokenService;
+        readonly IMapper _mapper;
         public ApplicationServiceUsuario(IMapper mapper,
                                          IServiceUsuario serviceUsuario,
                                          IApplicationServiceTokenService applicationServiceTokenService) : base(mapper, serviceUsuario)
         {
             _serviceUsuario = serviceUsuario;
             _applicationServiceTokenService = applicationServiceTokenService;
+            _mapper = mapper;
         }
 
         public string Autenticar(string email, string senha)
@@ -36,6 +38,13 @@ namespace ProvadorVirtual.Aplicacao.Services
 
             return token;
 
+        }
+
+        public UsuarioDTO Update(UsuarioDTO dto)
+        {
+           var enetity = _mapper.Map<Usuario>(dto);
+            _serviceUsuario.Update(enetity);
+            return dto;
         }
     }
 }

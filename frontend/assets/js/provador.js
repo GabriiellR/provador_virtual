@@ -33,6 +33,8 @@ menu_item.forEach((item) => {
 
 function BuscarProdutos() {
 
+	HelperClass.ExibirPreloader();
+
 	var settings = {
 		"url": `${url}/produto/detalhes`,
 		"method": "GET",
@@ -40,7 +42,7 @@ function BuscarProdutos() {
 
 	$.ajax(settings).done((response) => {
 
-		console.log(response);
+		HelperClass.RemoverPreLaoder();
 		instanciaAtualProdutos = response;
 		ControlarExibicaoProdutos(response);
 
@@ -49,6 +51,7 @@ function BuscarProdutos() {
 		var mensagem = `${jqXHR.status} - Não foi possível buscar os produtos`;
 		var timeout = 2000;
 		HelperClass.MostrarToastErro(mensagem, timeout);
+		HelperClass.RemoverPreLaoder();
 		return;
 	})
 
@@ -125,9 +128,68 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function Favoritar() {
-	alert('Você favoiritou este produto');
-}
 
+	var token = localStorage.getItem('token');
+
+	if (!token) {
+		var mensagem = "Faça login e tente novamente";
+		var timeout = 2000;
+		HelperClass.MostrarToastErro(mensagem, timeout, (() => {
+			window.location.href = "login.html";
+		}))
+	}
+
+	HelperClass.ExibirPreloader();
+
+	var usuario = HelperClass.ParseJwt(token);
+
+	var produtoId = instanciaAtualProdutos[indiceProdutoAtual].id;
+	var usuarioId = usuario.id;
+
+	var data = {
+		"produtoId": produtoId,
+		"usuarioId": usuarioId
+	}
+
+
+	var settings= {
+		"url": `${url}/favoritos`,
+		"method": "POST",
+		"data": JSON.stringify(data),
+		"headers": {
+			"Authorization": `Bearer ${token}`,
+			"content-type": "application/json"
+		}
+	}
+
+
+	$.ajax(settings).done((response) => {
+
+		var mensagem = "Produto adicionado aos favoritos";
+		var timeout = 2000;
+		HelperClass.MostrarToastSucesso(mensagem, timeout, (()=>{
+			HelperClass.RemoverPreLaoder();
+		}));
+
+
+	}).fail((jqXHR) => {
+
+		if (jqXHR.status == 401) {
+
+			var mensagem = "Faça login e tente novamente";
+			var timeout = 2000;
+			HelperClass.MostrarToastErro(mensagem, timeout, (() => {
+				window.location.href = "login.html";
+			}))
+		}
+
+		var mensagem = `${jqXHR.status} - Erro ao adicionar favoritos`;
+		var timeout = 2000;
+		HelperClass.MostrarToastErro(mensagem, timeout);
+		HelperClass.RemoverPreLaoder();
+	})
+
+}
 
 function vestir() {
 
@@ -136,7 +198,7 @@ function vestir() {
 
 	$('.swiper-wrapper').empty();
 
-	$.each(imagensCombinacoes, ((index, combinacao)=>{
+	$.each(imagensCombinacoes, ((index, combinacao) => {
 
 		$('.swiper-wrapper').append(`<div class="swiper-slide"><img src="../${combinacao.imagem}" alt="Imagem do Produto" /></div>`);
 	}))

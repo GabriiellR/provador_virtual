@@ -16,5 +16,10 @@ namespace ProvadorVirtual.Servicos.Services.Administracao
         {
             return _repositoryUsuario.GetUsuarioByEmailAndSenha(email, senha);
         }
+
+        public void Update(Usuario entity)
+        {
+            _repositoryUsuario.Update(entity);
+        }
     }
 }

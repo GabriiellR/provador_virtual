@@ -74,5 +74,18 @@ class HelperClass {
         return swiper;
     }
 
+    static ExibirPreloader() {
+
+        $('body').css('background-color', '#fff');
+        $('body').css('opacity', 0.7);
+        $('body').css('pointer-events', 'none');
+    }
+
+    static RemoverPreLaoder() {
+        $('body').css('background-color', 'transparent');
+        $('body').css('opacity', 1);
+        $('body').css('pointer-events', 'auto');
+    }
+
 }
 var helperClass = new HelperClass();

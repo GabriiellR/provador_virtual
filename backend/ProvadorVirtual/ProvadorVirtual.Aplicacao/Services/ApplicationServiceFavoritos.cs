@@ -15,5 +15,13 @@ namespace ProvadorVirtual.Aplicacao.Services
             _serviceFavoritos = serviceFavoritos;
             _mapper = mapper;
         }
+
+
+
+        public override FavoritosDTO AddOrUpdate(FavoritosDTO dto)
+        {
+          
+        }
+
     }
 }

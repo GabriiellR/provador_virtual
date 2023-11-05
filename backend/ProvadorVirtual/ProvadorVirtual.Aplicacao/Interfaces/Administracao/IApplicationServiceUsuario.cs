@@ -6,5 +6,6 @@ namespace ProvadorVirtual.Aplicacao.Interfaces.Administracao
     public interface IApplicationServiceUsuario : IApplicationServiceBase<UsuarioDTO, Usuario>
     {
         string Autenticar(string email, string senha);
+        UsuarioDTO Update(UsuarioDTO dto);
     }
 }

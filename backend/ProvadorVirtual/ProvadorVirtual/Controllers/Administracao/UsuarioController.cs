@@ -35,10 +35,13 @@ namespace ProvadorVirtual.Controllers.Administracao
         }
 
         [HttpPost]
-        public ActionResult AddOrUpdate(UsuarioDTO dto)
+        public ActionResult Add(UsuarioDTO dto)
         {
             if (dto is null)
                 return BadRequest("O dto não pode ser nulo");
+
+            if(dto.Id is not null)
+                return BadRequest("Método não autorizado");
 
             var usuario = _applicationServiceUsuario.AddOrUpdate(dto);
             usuario.Senha = "";
@@ -46,6 +49,25 @@ namespace ProvadorVirtual.Controllers.Administracao
 
             return Ok(usuario);
         }
+
+
+        [Authorize]
+        [HttpPut]
+        public ActionResult Update(UsuarioDTO dto)
+        {
+            if (dto is null)
+                return BadRequest("O dto não pode ser nulo");
+
+            if (dto.Id is null)
+                return BadRequest("Id não pode ser nulo");
+
+            var usuario = _applicationServiceUsuario.Update(dto);
+            usuario.Senha = "";
+
+
+            return Ok(usuario);
+        }
+
 
         [Authorize]
         [HttpGet("{usuarioId}")]

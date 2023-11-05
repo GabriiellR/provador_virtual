@@ -14,7 +14,7 @@ namespace ProvadorVirtual.Aplicacao.Services
             _serviceBase = serviceBase;
         }
 
-        public TDTO AddOrUpdate(TDTO dto)
+        public virtual TDTO AddOrUpdate(TDTO dto)
         {
             var entity = _mapper.Map<TEntity>(dto);
             _serviceBase.AddOrUpdate(entity);

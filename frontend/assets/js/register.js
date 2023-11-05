@@ -10,6 +10,8 @@ function AdicionarMascara() {
 
 function BuscarEndereco() {
 
+    HelperClass.ExibirPreloader();
+
     var urlBase = "https://viacep.com.br/ws";
 
     var cep = $('#cep').val();
@@ -32,6 +34,8 @@ function BuscarEndereco() {
         $('#estado').prop('readonly', true);
         $('#endereco').prop('readonly', true);
 
+        HelperClass.RemoverPreLaoder();
+
     }).fail((jqXHR) => {
         $('#bairro').prop('required', true);
         $('#cidade').prop('required', true);
@@ -43,9 +47,8 @@ function BuscarEndereco() {
         $('#estado').prop('readonly', false);
         $('#endereco').prop('readonly', false);
 
+        HelperClass.RemoverPreLaoder();
     })
-
-
 }
 
 function CadastrarUsuario() {
@@ -85,6 +88,8 @@ function CadastrarUsuario() {
         return;
     }
 
+    HelperClass.ExibirPreloader();
+
     var dataNascimentoArray = dataNascimento.split('/');
     var dataNascimnetoFormat = `${dataNascimentoArray[2]}-${dataNascimentoArray[1]}-${dataNascimentoArray[0]}`;
 
@@ -121,6 +126,7 @@ function CadastrarUsuario() {
         var mensagem = `${jqXHR.status} - Não foi possível cadastrar o usuário`;
         var timeout = 2000;
         HelperClass.MostrarToastErro(mensagem, timeout);
+        HelperClass.RemoverPreLaoder();
     })
 
 

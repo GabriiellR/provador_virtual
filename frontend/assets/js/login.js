@@ -14,6 +14,7 @@ function Logar() {
         return;
     }
 
+    HelperClass.ExibirPreloader();
 
     var data = {
         "email": email,
@@ -24,7 +25,6 @@ function Logar() {
         "url": `${urlApi}?email=${email}&senha=${senha}`,
         "method": "POST",
     }
-
 
     $.ajax(settgins).done((response) => {
 
@@ -44,7 +44,9 @@ function Logar() {
     }).fail((jqXHR) => {
         var mensagem = `${jqXHR.status} - Não foi possível autenticar`;
         var timeout = 2000;
-        HelperClass.MostrarToastErro(mensagem, timeout);
+        HelperClass.MostrarToastErro(mensagem, timeout, (()=>{
+            HelperClass.RemoverPreLaoder();
+        }));
         return;
     })
 

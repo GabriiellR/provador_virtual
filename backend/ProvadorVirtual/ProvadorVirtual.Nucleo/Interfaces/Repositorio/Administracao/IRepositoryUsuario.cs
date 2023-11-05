@@ -5,5 +5,6 @@ namespace ProvadorVirtual.Nucleo.Interfaces.Repositorio.Administracao
     public interface IRepositoryUsuario : IRepositoryBase<Usuario>
     {
         Usuario GetUsuarioByEmailAndSenha(string email, string senha);
+        void Update(Usuario entity);
     }
 }
