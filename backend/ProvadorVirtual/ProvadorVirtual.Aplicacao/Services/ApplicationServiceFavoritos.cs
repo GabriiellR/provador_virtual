@@ -16,12 +16,11 @@ namespace ProvadorVirtual.Aplicacao.Services
             _mapper = mapper;
         }
 
-
-
-        public override FavoritosDTO AddOrUpdate(FavoritosDTO dto)
+        public List<FavoritosDTO> GetByUsuario(int usuarioId)
         {
-          
-        }
+            var entity = _serviceFavoritos.GetByUsuario(usuarioId);
+            return _mapper.Map<List<FavoritosDTO>>(entity);
 
+        }
     }
 }

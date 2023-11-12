@@ -79,12 +79,14 @@ class HelperClass {
         $('body').css('background-color', '#fff');
         $('body').css('opacity', 0.7);
         $('body').css('pointer-events', 'none');
+        $('body').css('cursor', 'wait');
     }
 
     static RemoverPreLaoder() {
         $('body').css('background-color', 'transparent');
         $('body').css('opacity', 1);
         $('body').css('pointer-events', 'auto');
+        $('body').css('cursor', 'default');
     }
 
 }

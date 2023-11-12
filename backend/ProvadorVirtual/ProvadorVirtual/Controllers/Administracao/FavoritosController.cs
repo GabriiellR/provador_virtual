@@ -16,6 +16,20 @@ namespace ProvadorVirtual.Controllers.Administracao
             _applicationServiceFavoritos = applicationServiceFavoritos;
         }
 
+
+
+        [Authorize]
+        [HttpGet("{usuarioId}/favoritos")]
+        public ActionResult GetByUsuario(int usuarioId)
+        {
+            if (usuarioId <= 0)
+                return BadRequest("Usuário inválido");
+
+          var dto =  _applicationServiceFavoritos.GetByUsuario(usuarioId);
+
+            return Ok(dto);
+        }
+
         [Authorize]
         [HttpPost]
         public ActionResult AddOrUpdate(FavoritosDTO dto)
@@ -29,14 +43,14 @@ namespace ProvadorVirtual.Controllers.Administracao
 
 
         [Authorize]
-        [HttpDelete]
-        public ActionResult Delete(FavoritosDTO dto)
+        [HttpDelete("id")]
+        public ActionResult Delete(int id)
         {
-            if (dto is null)
+            if (id <= 0 )
                 return BadRequest("O id não pode ser nulo");
 
 
-            _applicationServiceFavoritos.Remove(dto);
+            _applicationServiceFavoritos.Remove(id);
 
             return Ok();
         }

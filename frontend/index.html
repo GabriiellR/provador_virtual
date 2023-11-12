@@ -11,8 +11,9 @@
   <link rel="stylesheet" href="./assets/css/footer.css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap"
-    rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="./assets/css/libs/jquery.modal.min.css">
 </head>
 
 <body>
@@ -45,11 +46,9 @@
             <ion-icon name="person-outline"></ion-icon>
           </a>
 
-
-          <button class="action-btn">
+          <a class="action-btn" href="#ex1" rel="modal:open" onclick="BuscarFavoritos();">
             <ion-icon name="heart-outline"></ion-icon>
-            <span class="count">8</span>
-          </button>
+          </a>
 
         </div>
 
@@ -409,6 +408,18 @@
 
   </main>
 
+
+  <!-- MODAL -->
+  <div id="ex1" class="modal">
+    <h3 style="margin-bottom: 20px;">Produtos favoritados</h3>
+    <P>
+
+      <div id="produtos-favoritados" style="display: flex; gap: 40px; flex-wrap: wrap; font-size: 15px; justify-content: center;"></div>
+
+    </P>
+    <a href="#" style="text-align: right;" rel="modal:close">Fechar</a>
+  </div>
+
   <div class="pre-footer">
     <div class="containerPrefooter">
       <h2 class="pre-footer-title">Inscreva-se para receber atualizações</h2>
@@ -474,8 +485,10 @@
 
   <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
   <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
   <script src="./assets/js/libs/jquery-3.7.1.js"></script>
   <script src="./assets/js/libs/sweetalert2@11.js"></script>
+  <script src="./assets/js/libs/jquery.modal.min.js"></script>
   <script src="./assets/js/script.js"></script>
   <script src="./assets/js/helper.js"></script>
   <script src="./assets/js/index.js"></script>

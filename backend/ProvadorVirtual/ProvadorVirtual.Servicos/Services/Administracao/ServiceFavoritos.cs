@@ -11,5 +11,10 @@ namespace ProvadorVirtual.Servicos.Services.Administracao
         {
             _repositoryFavoritos = repositoryFavoritos;
         }
+
+        public List<Favoritos> GetByUsuario(int usuarioId)
+        {
+            return _repositoryFavoritos.GetByUsuario(usuarioId);
+        }
     }
 }

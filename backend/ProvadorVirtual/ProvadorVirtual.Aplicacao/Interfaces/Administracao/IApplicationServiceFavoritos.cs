@@ -5,5 +5,6 @@ namespace ProvadorVirtual.Aplicacao.Interfaces.Administracao
 {
     public interface IApplicationServiceFavoritos : IApplicationServiceBase<FavoritosDTO, Favoritos>
     {
+        List<FavoritosDTO> GetByUsuario(int usuarioId);
     }
 }

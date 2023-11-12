@@ -12,7 +12,7 @@ namespace ProvadorVirtual.Repositorio
             _context = context;
         }
 
-        public void AddOrUpdate(TEntity entity)
+        public virtual void AddOrUpdate(TEntity entity)
         {
             _context.Set<TEntity>().Update(entity);
             _context.SaveChanges();
@@ -23,17 +23,17 @@ namespace ProvadorVirtual.Repositorio
             _context.Dispose();
         }
 
-        public List<TEntity> GetAll()
+        public virtual List<TEntity> GetAll()
         {
             return _context.Set<TEntity>().ToList();
         }
 
-        public TEntity GetById(int id)
+        public virtual TEntity GetById(int id)
         {
             return _context.Set<TEntity>().FirstOrDefault(prop => prop.Id.Equals(id));
         }
 
-        public void Remove(TEntity entity)
+        public virtual void Remove(TEntity entity)
         {
             _context.Set<TEntity>().Remove(entity);
         }

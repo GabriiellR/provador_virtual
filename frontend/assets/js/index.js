@@ -1,8 +1,11 @@
 var url = `${HelperClass.urlApi}/administracao`;
 let instanciaAtualProdutos = {};
+let instanciaFavoritos = {};
 
 
 function BuscarProdutos() {
+
+  HelperClass.ExibirPreloader();
 
   var settings = {
     "url": `${url}/produto/detalhes`,
@@ -10,18 +13,18 @@ function BuscarProdutos() {
   }
 
   $.ajax(settings).done((response) => {
-
-    console.log(response);
     instanciaAtualProdutos = response;
     CarregarProdutos();
     CarregarProdutosPopulares();
     CarregarMelhoresCombinacoes();
+    HelperClass.RemoverPreLaoder();
 
 
   }).fail((jqXHR) => {
     var mensagem = `${jqXHR.status} - Não foi possível buscar os produtos`;
     var timeout = 2000;
     HelperClass.MostrarToastErro(mensagem, timeout);
+    HelperClass.RemoverPreLaoder();
     return;
   })
 
@@ -97,9 +100,136 @@ function CarregarProdutos() {
   })
 }
 
+function BuscarFavoritos() {
+
+  var token = localStorage.getItem('token');
+
+  if (!token) {
+    var mensagem = "Faça login e tente novamente";
+    var timeout = 2000;
+    HelperClass.MostrarToastErro(mensagem, timeout, (() => {
+      window.location.href = "assets/pages/login.html";
+    }))
+  }
+
+  var usuario = HelperClass.ParseJwt(token);
+
+  HelperClass.ExibirPreloader();
+  var settings = {
+    "url": `${url}/favoritos/${usuario.id}/favoritos`,
+    "method": "GET",
+    "headers": {
+      "Authorization": `Bearer ${token}`
+    }
+  }
+
+  $.ajax(settings).done((response) => {
+
+    HelperClass.RemoverPreLaoder();
+
+    $('#produtos-favoritados').empty();
+
+    $.each(response, (index, favorito) => {
+
+
+      $('#produtos-favoritados').append(`<div> <ion-icon  name="close" class="favorito" data-favorito-id="${favorito.id}" aria-label="true"></ion-icon>
+      <div class="showcase-banner">
+        <img src="assets/${favorito.produto.imagem}" alt="Produto" width="90"class="product-img default">
+      </div>
+
+      <div class="showcase-content">
+
+        <a href="#" class="showcase-category" style="font-size="50px !important" ">${favorito.produto.nome}</a>
+
+        <a href="#">
+          <small style="font-size="30px !important" class="showcase-title">${favorito.produto.preco.toLocaleString('pt-BR', { style: 'currency', currency: 'BRL' })}</small>
+        </a>
+
+      </div>
+    </div>`);
+    });
+
+  }).fail((jqXHR) => {
+
+    if (jqXHR.status == 401) {
+      var mensagem = "Faça login para continuar";
+      var timeout = 1500;
+      HelperClass.MostrarToastErro(mensagem, timeout, (() => {
+        location.href = "assets/pages/login.html"
+      }));
+      return;
+    }
+
+    var mensagem = "Erro ao buscar favoritos";
+    var timeout = 2000;
+    HelperClass.MostrarToastErro(mensagem, timeout);
+    HelperClass.RemoverPreLaoder();
+  })
+
+
+}
+
+function RemoverFavorito() {
+
+
+  var token = localStorage.getItem('token');
+
+  if (!token) {
+    var mensagem = "Faça login e tente novamente";
+    var timeout = 2000;
+    HelperClass.MostrarToastErro(mensagem, timeout, (() => {
+      window.location.href = "assets/pages/login.html";
+    }))
+  }
+
+  var usuario = HelperClass.ParseJwt(token);
+
+  HelperClass.ExibirPreloader();
+
+  $(document).on('click', '.favorito', function () {
+
+    var favorito = $(this).data('favorito-id');
+
+    var data = {
+      "id": favorito
+    }
+
+    var settings = {
+      "url": `${url}/favoritos`,
+      "method": "DELETE",
+      "data": data,
+      "headers": {
+        "Authorization": `bearer ${token}`,
+        "content-type": "application/json"
+      }
+    }
+
+    $.ajax(settings).done((response) => {
+
+      var mensagem = "Produto removido dos favoritos com sucesso";
+      var timeout = 1500;
+      HelperClass.MostrarToastSucesso(mensagem, timeout, (() => {
+        location.reload();
+      }));
+
+      HelperClass.RemoverPreLaoder();
+
+    }).fail((jqXHR) => {
+
+      var mensagem = "Erro ao remover produto dos favoritos";
+      var timeout = 1500;
+      HelperClass.MostrarToastErro(mensagem, timeout)
+
+      HelperClass.RemoverPreLaoder();
+    })
+  });
+
+}
+
 
 
 
 $(function () {
   BuscarProdutos();
+  RemoverFavorito();
 })

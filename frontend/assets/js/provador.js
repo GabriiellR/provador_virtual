@@ -97,7 +97,7 @@ function CarregarProdutos() {
 							      <p>Material: ${instanciaAtualProdutos[indiceProdutoAtual].material}</p>						
 							      <div class="experimentar-btn">
 							      	<button id="experimentar" onclick="vestir()">Experimentar</button>
-							        <button  style="margin-left: 160px;" onclick="Favoritar()" ><ion-icon name="heart-outline"></ion-icon></button>
+							        <button   onclick="Favoritar()" >Favoritar</button>
 							      <div>
 	`);
 }
@@ -181,6 +181,7 @@ function Favoritar() {
 			HelperClass.MostrarToastErro(mensagem, timeout, (() => {
 				window.location.href = "login.html";
 			}))
+			return;
 		}
 
 		var mensagem = `${jqXHR.status} - Erro ao adicionar favoritos`;
