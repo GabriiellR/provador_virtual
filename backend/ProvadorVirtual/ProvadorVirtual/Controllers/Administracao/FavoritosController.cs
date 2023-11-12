@@ -43,14 +43,13 @@ namespace ProvadorVirtual.Controllers.Administracao
 
 
         [Authorize]
-        [HttpDelete("id")]
-        public ActionResult Delete(int id)
+        [HttpDelete]
+        public ActionResult Delete(FavoritosDTO dto)
         {
-            if (id <= 0 )
+            if (dto is null)
                 return BadRequest("O id não pode ser nulo");
 
-
-            _applicationServiceFavoritos.Remove(id);
+            _applicationServiceFavoritos.Remove(dto);
 
             return Ok();
         }
