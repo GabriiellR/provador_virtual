@@ -36,7 +36,7 @@ namespace ProvadorVirtual.Aplicacao.Services
         public void Remove(TDTO dto)
         {
             var entity = _mapper.Map<TEntity>(dto);
-            _serviceBase.AddOrUpdate(entity);
+            _serviceBase.Remove(entity);
         }
 
         public void Dispose()

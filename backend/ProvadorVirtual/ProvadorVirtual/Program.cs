@@ -70,6 +70,8 @@ builder.Services.AddScoped<IApplicationServiceProdutoImagemProvador, Application
 builder.Services.AddScoped<IServiceProdutoImagemProvador, ServiceProdutoImagemProvador>();
 builder.Services.AddScoped<IRepositoryProdutoImagemProvador, RepositoryProdutoImagemProvador>();
 
+builder.Services.AddScoped<IApplicationServiceEmail, ApplicationServiceEmail>();
+
 
 
 var app = builder.Build();

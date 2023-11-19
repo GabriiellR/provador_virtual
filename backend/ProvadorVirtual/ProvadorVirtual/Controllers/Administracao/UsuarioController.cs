@@ -16,6 +16,25 @@ namespace ProvadorVirtual.Controllers.Administracao
             _applicationServiceUsuario = applicationServiceUsuario;
         }
 
+        [HttpPost("redefinirSenha")]
+        public ActionResult RedefinirSenha(string? email)
+        {
+            if (email.IsNullOrEmpty())
+                return BadRequest("O e-mail não pode ser nulo");
+
+            try
+            {
+                _applicationServiceUsuario.RedefinirSenha(email);
+            }
+            catch (Exception ex)
+            {
+                return BadRequest(ex);
+            }
+
+
+            return Ok("Senha redefinida");
+
+        }
 
         [HttpPost("autenticar")]
         public ActionResult Autenticar(string email, string senha)
@@ -40,7 +59,7 @@ namespace ProvadorVirtual.Controllers.Administracao
             if (dto is null)
                 return BadRequest("O dto não pode ser nulo");
 
-            if(dto.Id is not null)
+            if (dto.Id is not null)
                 return BadRequest("Método não autorizado");
 
             var usuario = _applicationServiceUsuario.AddOrUpdate(dto);
@@ -49,7 +68,6 @@ namespace ProvadorVirtual.Controllers.Administracao
 
             return Ok(usuario);
         }
-
 
         [Authorize]
         [HttpPut]
@@ -68,7 +86,6 @@ namespace ProvadorVirtual.Controllers.Administracao
             return Ok(usuario);
         }
 
-
         [Authorize]
         [HttpGet("{usuarioId}")]
         public ActionResult GetById(int usuarioId)
@@ -81,6 +98,5 @@ namespace ProvadorVirtual.Controllers.Administracao
 
             return Ok(usuario);
         }
-
     }
 }

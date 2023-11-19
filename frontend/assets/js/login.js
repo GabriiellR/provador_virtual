@@ -1,6 +1,5 @@
 var urlApi = `${HelperClass.urlApi}/administracao/usuario/autenticar`;
 
-
 function Logar() {
     var email = $('#email').val();
     var senha = $('#senha').val();
@@ -44,11 +43,50 @@ function Logar() {
     }).fail((jqXHR) => {
         var mensagem = `${jqXHR.status} - Não foi possível autenticar`;
         var timeout = 2000;
-        HelperClass.MostrarToastErro(mensagem, timeout, (()=>{
+        HelperClass.MostrarToastErro(mensagem, timeout, (() => {
             HelperClass.RemoverPreLaoder();
         }));
         return;
     })
 
+
+}
+
+function EsqueciMinhaSenha() {
+
+    var email = $('#email').val();
+
+    if (!email) {
+        var mensagem = "Informe o e-mail";
+        var timeout = 2500;
+        HelperClass.MostrarToastErro(mensagem, timeout);
+        return;
+    }
+
+
+    HelperClass.ExibirPreloader();
+    var data = {
+        "email": email
+    }
+
+    var settgins = {
+        "url": `${HelperClass.urlApi}/administracao/usuario/redefinirSenha?email=${email}`,
+        "method": "POST",
+    }
+
+    $.ajax(settgins).done((response) => {
+
+        var mensagem = "A nova senha foi enviada para seu e-mail";
+        var timeout = 2500;
+        HelperClass.MostrarToastSucesso(mensagem, timeout);
+        HelperClass.RemoverPreLaoder();
+        return;
+
+    }).fail((jqXHR) => {
+        var mensagem = `${jqXHR.status} - Erro ao redefinir senha`;
+        var timeout = 2000;
+        HelperClass.MostrarToastErro(mensagem, timeout);
+        HelperClass.RemoverPreLaoder();
+    })
 
 }

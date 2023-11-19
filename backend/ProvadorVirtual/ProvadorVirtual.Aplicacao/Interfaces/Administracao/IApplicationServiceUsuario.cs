@@ -7,5 +7,7 @@ namespace ProvadorVirtual.Aplicacao.Interfaces.Administracao
     {
         string Autenticar(string email, string senha);
         UsuarioDTO Update(UsuarioDTO dto);
+        UsuarioDTO GetUsuarioByEmail(string email);
+        void RedefinirSenha(string email);
     }
 }

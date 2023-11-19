@@ -1,8 +1,6 @@
 ﻿using ProvadorVirtual.Data;
 using ProvadorVirtual.Dominio.Models;
 using ProvadorVirtual.Nucleo.Interfaces.Repositorio.Administracao;
-using ProvadorVirtual.Repositorio;
-using System.Runtime.ConstrainedExecution;
 
 namespace ProvadorVirtual.Repositorio.Administracao
 {
@@ -20,6 +18,16 @@ namespace ProvadorVirtual.Repositorio.Administracao
                           .FirstOrDefault(prop => prop.Email.Equals(email) && prop.Senha.Equals(senha));
         }
 
+        public Usuario GetUsuarioByEmailAndSenha(string email)
+        {
+            return _contex.Usuario.FirstOrDefault(prop => prop.Email.Equals(email));
+        }
+
+        public void SaveChanges()
+        {
+            _contex.SaveChanges();
+        }
+
         public void Update(Usuario entity)
         {
             var usuario = _contex.Usuario.FirstOrDefault(prop => prop.Id.Equals(entity.Id));
@@ -30,6 +38,7 @@ namespace ProvadorVirtual.Repositorio.Administracao
             usuario.Cidade = entity.Cidade;
             usuario.Bairro = entity.Bairro;
             usuario.Estado = entity.Estado;
+            usuario.Senha = entity.Senha;
 
             _contex.SaveChanges();
         }

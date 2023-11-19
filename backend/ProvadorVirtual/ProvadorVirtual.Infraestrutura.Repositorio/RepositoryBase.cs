@@ -36,6 +36,7 @@ namespace ProvadorVirtual.Repositorio
         public virtual void Remove(TEntity entity)
         {
             _context.Set<TEntity>().Remove(entity);
+            _context.SaveChanges();
         }
     }
 }

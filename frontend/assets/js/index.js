@@ -132,7 +132,7 @@ function BuscarFavoritos() {
     $.each(response, (index, favorito) => {
 
 
-      $('#produtos-favoritados').append(`<div> <ion-icon  name="close" class="favorito" data-favorito-id="${index}" aria-label="true"></ion-icon>
+      $('#produtos-favoritados').append(`<div> <ion-icon  name="close" class="favorito" data-favorito-id="${favorito.id}" aria-label="true"></ion-icon>
       <div class="showcase-banner">
         <img src="assets/${favorito.produto.imagem}" alt="Produto" width="90"class="product-img default">
       </div>
@@ -190,11 +190,10 @@ function RemoverFavorito() {
 
     var favoritoIndex = $(this).data('favorito-id');
 
-
     var settings = {
-      "url": `${url}/favoritos`,
+      "url": `${url}/favoritos/${favoritoIndex}`,
       "method": "DELETE",
-      "data": JSON.stringify(instanciaFavoritos[favoritoIndex]),
+      "data": JSON.stringify({ "id": favoritoIndex }),
       "headers": {
         "Authorization": `bearer ${token}`,
         "content-type": "application/json"
@@ -222,9 +221,6 @@ function RemoverFavorito() {
   });
 
 }
-
-
-
 
 $(function () {
   BuscarProdutos();

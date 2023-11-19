@@ -84,6 +84,17 @@ function EditarInformacoes() {
     var estado = $('#input-estado').val();
     var cep = $('#input-cep').val();
 
+    var novaSenha = $('#input-nova-senha').val();
+    var confirmarSenha = $('#input-confirmar-senha').val();
+
+    var propriedadeNovaSenha = {};
+
+    if (novaSenha != confirmarSenha) {
+        var mensagem = "As senha não conferem";
+        var timeout = 2000;
+        HelperClass.MostrarToastErro(mensagem, timeout);
+        return;
+    }
 
     var data = {
         "id": usuario.id,
@@ -96,10 +107,18 @@ function EditarInformacoes() {
         "cep": cep,
     }
 
+    if (novaSenha) {
+        propriedadeNovaSenha = {
+            "senha": novaSenha
+        }
+    }
+
+    var dataObject = Object.assign(data, propriedadeNovaSenha);
+
     var settings = {
         "url": `${urlApi}`,
         "method": "PUT",
-        "data": JSON.stringify(data),
+        "data": JSON.stringify(dataObject),
         "headers": {
             "Authorization": `Bearer ${token}`,
             "content-type": "application/json"
@@ -120,7 +139,7 @@ function EditarInformacoes() {
             var mensagem = `${jqXHR.status} - Faça login e tente novamente`;
             var timeout = 2000;
             HelperClass.MostrarToastErro(mensagem, timeout, (() => {
-                // window.location.href = "login.html";
+                window.location.href = "login.html";
             }))
             return;
         }
